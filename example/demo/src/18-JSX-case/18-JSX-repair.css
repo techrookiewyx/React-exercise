@@ -1,0 +1,10 @@
+.intro h1{
+  font-size: 50px;
+  background-image: linear-gradient(to right,rgb(255,10,0),rgb(123,189,0));
+  background-clip: text;
+  color:transparent;
+}
+.summary{
+   padding: 10px;
+   border: 10px solid rgb(255, 251, 0);
+}
