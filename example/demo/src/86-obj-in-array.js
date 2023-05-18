@@ -38,7 +38,7 @@ export default function ArrayOjb() {
     }))
   }
   function handleYourToggle(id,next) {
-    setYourList(myList.map(ele => { 
+    setYourList(yourList.map(ele => { 
       if (ele.id === id) {
         return { ...ele, seen: next }
       } else { 
