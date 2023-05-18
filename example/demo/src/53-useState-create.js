@@ -4,7 +4,6 @@ export default function StateExp() {
   const [index, setIndex] = useState(0);
   function handleClick() {
     setIndex(prevState => prevState + 1);
-    console.log(index);
   }
   let dateIndex = data[index];
   return (
