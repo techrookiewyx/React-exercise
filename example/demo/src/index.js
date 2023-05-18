@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Fn2 from './JSX1';
-function MyButton(){
-  return (
-      <button>
-        按钮
-      </button>
-    )
-}
+import { BrowserRouter as Router } from 'react-router-dom'
+import App from './App';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <h1>我的第一个react程序</h1>
-    <MyButton />
-    <Fn2 />
+    <Router>
+      <App/>
+    </Router>
     </div>
 );
 
