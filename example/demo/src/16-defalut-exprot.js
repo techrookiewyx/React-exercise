@@ -15,6 +15,7 @@ export default function DefExprot() {
         <SpecificExprot />
         <SpecificExprot />
         <SpecificExprot />
+        <Test/>
     </div>
   )
 }
