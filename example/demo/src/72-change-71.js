@@ -14,8 +14,8 @@ export default function ChangeMoveDot(){
     }}
       style={{
         position: 'relative',
-        width:200,
-        height: 200,
+        width:'100vw',
+        height: '100vh',
         backgroundColor:'green'
       }}
     >
