@@ -36,6 +36,7 @@ export default function StateRespInput() {
   return (
     <>
       <h2>City quiz</h2>
+      <h3>输入 lima 试试</h3>
       <p>In which city is there a billboard that turns air into drinkable water?</p>
       <form onSubmit={handleSubmit}>
         <textarea
