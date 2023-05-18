@@ -3,7 +3,7 @@ import {useState} from 'react'
 let nextId = 0
 export default function ArrayAddFault() {
   const [name,setName] = useState('');
-  const [artlist, setArtlist] = useState([]);
+  const [artlist] = useState([]);
   return (
     <div>
        <h1>振奋人心的雕塑家们：</h1>

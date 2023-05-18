@@ -7,7 +7,7 @@ const initialItems = [
 ];
 
 export default function RepeatState() {
-  const [items, setItems] = useState(initialItems);
+  const [items] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
   return (
     <div>

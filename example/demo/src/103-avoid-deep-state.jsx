@@ -22,7 +22,7 @@ function PlaceTree({ id, placesById }) {
   )
 }
 export default function AvoidDeepState() {
-  const [plan, setPlan] = useState(changeTravelPlan);
+  const [plan] = useState(changeTravelPlan);
   const root = plan[0];
   const planetIds = root.childIds;
   return (

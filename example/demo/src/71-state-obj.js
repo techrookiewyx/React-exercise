@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function MoveDot(){
-  const [position , setPosition] = useState({
+  const [position] = useState({
     x:0,
     y:0
   })

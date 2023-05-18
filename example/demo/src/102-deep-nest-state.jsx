@@ -17,7 +17,7 @@ function PlaceTree({place}){
   )
 }
 export default function DeepNestState() {
-  const [plan, setPlan] = useState(initialTravelPlan);
+  const [plan] = useState(initialTravelPlan);
   const planets = plan.childPlaces;
   return (
     <div>
