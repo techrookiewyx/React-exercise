@@ -10,11 +10,11 @@ function ProFile() {
 }
 export default function ProfileUse() {
   return (
-    <seciton>
+    <div>
       <h1>了不起的科学家</h1>
       <ProFile/>
       <ProFile/>
       <ProFile/>
-    </seciton>
+    </div>
   )
 }
