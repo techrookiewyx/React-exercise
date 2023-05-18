@@ -38,7 +38,8 @@ import Logs from "./Logs/Logs";
 
 
 // 18  improt和exprot
-import DefExprot, { Test } from "./16-defalut-exprot";
+import DefExprot from "./16-defalut-exprot";
+//import { Test } from "./16-defalut-exprot";
 //import { SpecificExprot } from "./15-exprot";
 // 19
 import HtmlToJSX from "./17-HtmlToJSX";
