@@ -219,7 +219,42 @@ import ImmerTravelPlan from "./105-immer-update-nest";
 import MailClient from "./106-state-structure-case";
 //107 state结构 挑战4 设计state实现多选功能
 import MailClientTwo from "./107-state-structure-case2";
-
+//108 组件的独立状态
+import StateIndependence from "./108-state-independence";
+//109 状态提升
+import StateImprove from "./109-state-improve";
+//110 状态提升-同步输入框
+import InputStateSync from "./110-state-improve-input";
+//111 状态提升-列表过滤
+import StateImproveListFilter from "./111-state-improve-ListFilter";
+//112 组件中state在树中的位置  （state的保留和重置）
+import StateTree from "./112-state-tree-position";
+//113 state销毁
+import StateDestroy from "./113-state-destroy";
+//114 state保留
+import StateReserve from "./114-state-reserve";
+//115 注意 
+import StateTreeNotice from "./115-state-tree-notice";
+//116 state重置（位置相同的不同组件-切换）
+import StateResetSwitch from "./116-state-reset";
+//117  state重置（位置相同的不同组件-结构改变）
+import StateResetTwo from "./117-state-reste-two";
+//118  state保留（不希望发生的情况）
+import StateKeepNohope from "./118-state-keep";
+//119  相同位置state重置-改变渲染位置
+import StateResetDiffPos from "./119-diffposi-reste";
+//120  相同位置state重置-通过key属性
+import StateResetUsekey from "./120-state-rest-useKey";
+//121  使用key重置表单state
+import Messenger from "./121-reset-from-key";
+//122  修复丢失的输入框文本
+import RepairLostInput from "./122-repair-lost-input";
+//123  交换两个表单字段 
+import ChangeFormField from "./123-change-form-field";
+//124  重置详情表单
+import ResetFormField from "./124-reset-form-field";
+//125  修复列表中错位的 state 
+import RepaetListDislocation from "./125-repaet-list-state";
 export default function App() {
   return (
     <>   
@@ -332,6 +367,24 @@ export default function App() {
           <Route path="/case-105" element={<ImmerTravelPlan />} />
           <Route path="/case-106" element={<MailClient />} />
           <Route path="/case-107" element={<MailClientTwo />} />
+          <Route path="/case-108" element={<StateIndependence />} />
+          <Route path="/case-109" element={<StateImprove />} />
+          <Route path="/case-110" element={<InputStateSync />} />
+          <Route path="/case-111" element={<StateImproveListFilter />} />
+          <Route path="/case-112" element={<StateTree />} />
+          <Route path="/case-113" element={<StateDestroy />} />
+          <Route path="/case-114" element={<StateReserve />} />
+          <Route path="/case-115" element={<StateTreeNotice />} />
+          <Route path="/case-116" element={<StateResetSwitch />} />
+          <Route path="/case-117" element={<StateResetTwo />} />
+          <Route path="/case-118" element={<StateKeepNohope />} />
+          <Route path="/case-119" element={<StateResetDiffPos />} />
+          <Route path="/case-120" element={<StateResetUsekey />} />
+          <Route path="/case-121" element={<Messenger />} />
+          <Route path="/case-122" element={<RepairLostInput />} />
+          <Route path="/case-123" element={<ChangeFormField />} />
+          <Route path="/case-124" element={<ResetFormField />} />
+          <Route path="/case-125" element={<RepaetListDislocation />} />
         {/*</Route>*/}
       </Routes>
     </>
