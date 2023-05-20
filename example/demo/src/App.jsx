@@ -255,6 +255,20 @@ import ChangeFormField from "./123-change-form-field";
 import ResetFormField from "./124-reset-form-field";
 //125  修复列表中错位的 state 
 import RepaetListDislocation from "./125-repaet-list-state";
+//126  state 表单操作
+import FormOperate from "./126-form-operate";
+//127  reducer 表单操作
+import RedcuerFormOp from "./127-state-to-redcuer"; 
+//128  immerReducer简化更新逻辑
+import ImmerRedcuerFormOp from "./128-immer-reducer";
+//129  reducer使用案例-聊天表单
+import ReducerChat from "./129-reducer-chat";
+//130  reducer使用案例-聊天表单发送清空输入框
+import ReducerChatResetInput from "./130-reset-input";
+//131  reducer使用案例-切换时保留输入框内容
+import ReducerChatChangeKeep from "./131-reducer-char-keep-mgs";
+//132  实现useReducer
+import ComeTureReducer from "./132-cometure-useReducer";
 export default function App() {
   return (
     <>   
@@ -385,6 +399,13 @@ export default function App() {
           <Route path="/case-123" element={<ChangeFormField />} />
           <Route path="/case-124" element={<ResetFormField />} />
           <Route path="/case-125" element={<RepaetListDislocation />} />
+          <Route path="/case-126" element={<FormOperate />} />
+          <Route path="/case-127" element={<RedcuerFormOp />} />
+          <Route path="/case-128" element={<ImmerRedcuerFormOp />} />
+          <Route path="/case-129" element={<ReducerChat />} />
+          <Route path="/case-130" element={<ReducerChatResetInput />} />
+          <Route path="/case-131" element={<ReducerChatChangeKeep />} />
+          <Route path="/case-132" element={<ComeTureReducer />} />
         {/*</Route>*/}
       </Routes>
     </>
