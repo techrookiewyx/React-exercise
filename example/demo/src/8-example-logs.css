@@ -90,3 +90,24 @@
 .fancy {
   border: 5px solid pink;
 }
+.box{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+.fancy2 {
+  border: 4px dashed pink;
+}
+
+.case138-ul{
+  list-style-type: none; 
+  padding: 0px 10px;
+}
+.case138-li{
+  margin-bottom: 10px; 
+  display: grid; 
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
