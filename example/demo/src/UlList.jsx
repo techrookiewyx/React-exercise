@@ -400,6 +400,27 @@ export default function UlList() {
       <li>
        <Link to='/case-132'>案例132</Link>
       </li>
+      <li>
+       <Link to='/case-133'>案例133</Link>
+      </li>
+      <li>
+       <Link to='/case-134'>案例134</Link>
+      </li>
+      <li>
+       <Link to='/case-135'>案例135</Link>
+      </li>
+      <li>
+       <Link to='/case-136'>案例136</Link>
+      </li>
+      <li>
+       <Link to='/case-137'>案例137</Link>
+      </li>
+      <li>
+       <Link to='/case-138'>案例138</Link>
+      </li>
+      <li>
+       <Link to='/case-139'>案例139</Link>
+      </li>
       </ul>
       <hr/>
       {/*<Outlet/>*/} 

@@ -269,6 +269,20 @@ import ReducerChatResetInput from "./130-reset-input";
 import ReducerChatChangeKeep from "./131-reducer-char-keep-mgs";
 //132  实现useReducer
 import ComeTureReducer from "./132-cometure-useReducer";
+//133  props的传递
+import PropsLevel from "./133-props-level";
+//134  props的传递2
+import PropsLevelTwo from "./134-props-level2";
+//135  context案例
+import ContextLevel from "./135-context-Level";
+//136  相同的组件中使用并提供 context
+import Page from "./136-use-and-provider";
+//137  Context 会穿过中间层级的组件
+import ProfilePage from "./137-ProfilePage";
+//138  context挑战-用context替代逐层 props
+import ContextChallange from "./138-context-replace-props";
+//139  reducer-任务列表案例
+import TaskApp from "./139-reducer-case";
 export default function App() {
   return (
     <>   
@@ -406,6 +420,13 @@ export default function App() {
           <Route path="/case-130" element={<ReducerChatResetInput />} />
           <Route path="/case-131" element={<ReducerChatChangeKeep />} />
           <Route path="/case-132" element={<ComeTureReducer />} />
+          <Route path="/case-133" element={<PropsLevel />} />
+          <Route path="/case-134" element={<PropsLevelTwo />} />
+          <Route path="/case-135" element={<ContextLevel />} />
+          <Route path="/case-136" element={<Page/>} />
+          <Route path="/case-137" element={<ProfilePage/>} />
+          <Route path="/case-138" element={<ContextChallange/>} />
+          <Route path="/case-139" element={<TaskApp/>} />
         {/*</Route>*/}
       </Routes>
     </>
