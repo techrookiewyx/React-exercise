@@ -303,6 +303,8 @@ import RefRepeatInput from "./147-ref-repeat-input";
 import Toggle from "./148-ref-repeat-render";
 //149  ref-修复防抖
 import RefRepeatDebounce from "./149-ref-repeat-debounce";
+//150  ref-读取最新的state
+import RefGetNewState from "./150-ref-read-state";
 export default function App() {
   return (
     <>   
@@ -457,6 +459,7 @@ export default function App() {
           <Route path="/case-147" element={<RefRepeatInput/>} />
           <Route path="/case-148" element={<Toggle/>} />
           <Route path="/case-149" element={<RefRepeatDebounce/>} />
+          <Route path="/case-150" element={<RefGetNewState/>} />
         {/*</Route>*/}
       </Routes>
     </>
