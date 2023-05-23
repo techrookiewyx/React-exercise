@@ -421,6 +421,36 @@ export default function UlList() {
       <li>
        <Link to='/case-139'>案例139</Link>
       </li>
+      <li>
+       <Link to='/case-140'>案例140</Link>
+      </li>
+      <li>
+       <Link to='/case-141'>案例141</Link>
+      </li>
+      <li>
+       <Link to='/case-142'>案例142</Link>
+      </li>
+      <li>
+       <Link to='/case-143'>案例143</Link>
+      </li>
+      <li>
+       <Link to='/case-144'>案例144</Link>
+      </li>
+      <li>
+       <Link to='/case-145'>案例145</Link>
+      </li>
+      <li>
+       <Link to='/case-146'>案例146</Link>
+      </li>
+      <li>
+       <Link to='/case-147'>案例147</Link>
+      </li>
+      <li>
+       <Link to='/case-148'>案例148</Link>
+      </li>
+      <li>
+       <Link to='/case-149'>案例149</Link>
+      </li>
       </ul>
       <hr/>
       {/*<Outlet/>*/} 

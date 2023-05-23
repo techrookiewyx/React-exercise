@@ -283,6 +283,26 @@ import ProfilePage from "./137-ProfilePage";
 import ContextChallange from "./138-context-replace-props";
 //139  reducer-任务列表案例
 import TaskApp from "./139-reducer-case";
+//140  reducer和context结合使用
+import TaskAppRedCon from "./140-context-reducer";
+//141  reducer和context结合使用-逻辑迁移
+import TaskAppRedConMove from "./141-logic-move";
+//142  useRef
+import RefUse from "./142-useRef";
+//143  state秒表案例
+import StateStopwatch from "./143-state-stopwatch";
+//144  ref-state秒表案例
+import RefStopwatch from "./144-ref-stopwatch";
+//145  state计数器
+import StateCount from "./145-state-count";
+//146  ref计数器
+import RefCount from "./146-ref-count";
+//147  ref-修复坏掉的聊天输入框
+import RefRepeatInput from "./147-ref-repeat-input";
+//148  ref-修复无法重新渲染的组件
+import Toggle from "./148-ref-repeat-render";
+//149  ref-修复防抖
+import RefRepeatDebounce from "./149-ref-repeat-debounce";
 export default function App() {
   return (
     <>   
@@ -427,6 +447,16 @@ export default function App() {
           <Route path="/case-137" element={<ProfilePage/>} />
           <Route path="/case-138" element={<ContextChallange/>} />
           <Route path="/case-139" element={<TaskApp/>} />
+          <Route path="/case-140" element={<TaskAppRedCon/>} />
+          <Route path="/case-141" element={<TaskAppRedConMove/>} />
+          <Route path="/case-142" element={<RefUse/>} />
+          <Route path="/case-143" element={<StateStopwatch/>} />
+          <Route path="/case-144" element={<RefStopwatch/>} />
+          <Route path="/case-145" element={<StateCount/>} />
+          <Route path="/case-146" element={<RefCount/>} />
+          <Route path="/case-147" element={<RefRepeatInput/>} />
+          <Route path="/case-148" element={<Toggle/>} />
+          <Route path="/case-149" element={<RefRepeatDebounce/>} />
         {/*</Route>*/}
       </Routes>
     </>
