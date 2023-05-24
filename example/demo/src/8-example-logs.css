@@ -111,3 +111,29 @@
   gap: 20px;
   align-items: center;
 }
+.nav152{
+  text-align: center;
+}
+.btn152{
+  margin:15px;
+}
+.div152{
+  width: 100%;
+  overflow: hidden;
+}
+.ul152{
+   list-style: none;
+   white-space: nowrap;
+}
+.li152{
+  display: inline-block;
+  padding: 10px;
+}
+.active162{
+  background: rgba(0, 100, 150, 0.4);
+}
+.img162{
+  padding: 10px;
+  margin: -10px;
+  transition: all 0.2s linear;
+}
