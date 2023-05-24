@@ -305,6 +305,32 @@ import Toggle from "./148-ref-repeat-render";
 import RefRepeatDebounce from "./149-ref-repeat-debounce";
 //150  ref-读取最新的state
 import RefGetNewState from "./150-ref-read-state";
+//151  ref操作dom-使文本输入框获得焦点
+import RefGetDom from "./151-useRef-dom";
+//152  ref操作dom-滚动至一个元素
+import RefOpaDomScroll from "./152-ref-scroll-ele";
+//153  ref回调管理ref列表
+import RefCallBack from "./153-ref-callback";
+//154  ref访问另一个组件的 DOM 节点 -错误情况
+import GetOtherUnitDomErr from "./154-ref-error";
+//155  forwardRef访问另一个组件的 DOM 节点
+import GetOtherUnitDom from "./155-ref-unit";
+//156  useImperativeHandle暴露一部分API
+import RefHandleExpose from "./156-ref-useImperative";
+//157  异步更新的state
+import TodoList from "./157-update-state";
+//158  用 flushSync 强制同步更新 state/DOM
+import TodoListImdUpdate from "./158-immediate-update-dom";
+//159  ref修改DOM
+import RefModifDom from "./159-ref-modify-dom";
+//160  ref操作dom案例-播放和暂停视频 
+import VideoPlayer from "./160-ref-play-pause-video";
+//161  ref操作dom案例-使搜索域获得焦点
+import RefGetFocus from "./161-ref-get-focus";
+//162  ref操作dom案例- 滚动图像轮播
+import CatFriends from "./162-ref-lunbo-img";
+//163  ref操作dom案例-使分开的组件中的搜索域获得焦点
+import PageFocus from "./163-focus-case";
 export default function App() {
   return (
     <>   
@@ -460,6 +486,19 @@ export default function App() {
           <Route path="/case-148" element={<Toggle/>} />
           <Route path="/case-149" element={<RefRepeatDebounce/>} />
           <Route path="/case-150" element={<RefGetNewState/>} />
+          <Route path="/case-151" element={<RefGetDom/>} />
+          <Route path="/case-152" element={<RefOpaDomScroll/>} />
+          <Route path="/case-153" element={<RefCallBack/>} />
+          <Route path="/case-154" element={<GetOtherUnitDomErr/>} />
+          <Route path="/case-155" element={<GetOtherUnitDom/>} />
+          <Route path="/case-156" element={<RefHandleExpose/>} />
+          <Route path="/case-157" element={<TodoList/>} />
+          <Route path="/case-158" element={<TodoListImdUpdate/>} />
+          <Route path="/case-159" element={<RefModifDom/>} />
+          <Route path="/case-160" element={<VideoPlayer/>} />
+          <Route path="/case-161" element={<RefGetFocus/>} />
+          <Route path="/case-162" element={<CatFriends/>} />
+          <Route path="/case-163" element={<PageFocus/>} />
         {/*</Route>*/}
       </Routes>
     </>
