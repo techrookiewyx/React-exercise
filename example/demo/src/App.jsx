@@ -331,6 +331,24 @@ import RefGetFocus from "./161-ref-get-focus";
 import CatFriends from "./162-ref-lunbo-img";
 //163  ref操作dom案例-使分开的组件中的搜索域获得焦点
 import PageFocus from "./163-focus-case";
+//164  事件处理之外的副作用
+import EventOutsideEffect from "./164-no-effect-case";
+//165  effect控制视频状态同步
+import UseEffectVideo from "./165-use-effect";
+//166  effect重新运行
+import EffectRun from "./166-effect-run";
+//167  effect依赖项-跳过不必要的effect运行
+import EffectDependency from "./167-effect-dependencies";
+//168  effect挂载-聊天案例链接
+import ChateRoom from "./168-effect-addup";
+//169  effect清理函数-关闭链接
+import ChateRoomClear from "./169-effect-clear";
+//170  effect工作
+import EfffectTime from "./170-put-it-togteger";
+//171  effect案例-自动获取输入框焦点
+import EffectFocus from "./171-effect-focus";
+//172  effect案例-条件聚焦输入框
+import Counter from "./172-effect-repeat-interval";
 export default function App() {
   return (
     <>   
@@ -499,6 +517,15 @@ export default function App() {
           <Route path="/case-161" element={<RefGetFocus/>} />
           <Route path="/case-162" element={<CatFriends/>} />
           <Route path="/case-163" element={<PageFocus/>} />
+          <Route path="/case-164" element={<EventOutsideEffect/>} />
+          <Route path="/case-165" element={<UseEffectVideo/>} />
+          <Route path="/case-166" element={<EffectRun/>} />
+          <Route path="/case-167" element={<EffectDependency/>} />
+          <Route path="/case-168" element={<ChateRoom/>} />
+          <Route path="/case-169" element={<ChateRoomClear/>} />
+          <Route path="/case-170" element={<EfffectTime/>} />
+          <Route path="/case-171" element={<EffectFocus/>} />
+          <Route path="/case-172" element={<Counter/>} />
         {/*</Route>*/}
       </Routes>
     </>
