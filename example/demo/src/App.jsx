@@ -349,6 +349,14 @@ import EfffectTime from "./170-put-it-togteger";
 import EffectFocus from "./171-effect-focus";
 //172  effect案例-条件聚焦输入框
 import Counter from "./172-effect-repeat-interval";
+//173  无effect-转换数据
+import NoEffectTodoList from "./173-noEffect-transform-data";
+//174  useMemo缓存没有效果的计算
+import UseMemoTodoList from "./174-usememo";
+//175  无effect-重置状态
+import NoEffectReState from "./175-no-effect-reset-state";
+//176  无effect-表单的提交
+import NoEffectForm from "./176-noEffect-submit";
 export default function App() {
   return (
     <>   
@@ -526,6 +534,10 @@ export default function App() {
           <Route path="/case-170" element={<EfffectTime/>} />
           <Route path="/case-171" element={<EffectFocus/>} />
           <Route path="/case-172" element={<Counter/>} />
+          <Route path="/case-173" element={<NoEffectTodoList/>} />
+          <Route path="/case-174" element={<UseMemoTodoList/>} />
+          <Route path="/case-175" element={<NoEffectReState/>} />
+          <Route path="/case-176" element={<NoEffectForm/>} />
         {/*</Route>*/}
       </Routes>
     </>
