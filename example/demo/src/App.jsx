@@ -357,6 +357,24 @@ import UseMemoTodoList from "./174-usememo";
 import NoEffectReState from "./175-no-effect-reset-state";
 //176  无effect-表单的提交
 import NoEffectForm from "./176-noEffect-submit";
+//177  effect-重新同步
+import EffectResync from "./177-effect-resync";
+//178  effect-对反应值响应
+import EffectReactiveVle from "./178-effect-reactive-value";
+//179  effect-空依赖
+import EffecEmptyDeps from "./179-effect-empty-deps";
+//180  linter检查依赖项
+import LinterCheckDeps from "./180-linter-check-deps";
+//181  effect案例-修复输入框变化重新同步
+import RepeateIptResync from "./181-repeat-effect-resync";
+//182  effect案例-通过反应值打开和关闭同步
+import EffectChangeSync from "./182-effect-open-close-sync";
+//183  effect案例-空依赖导致不能同步
+import RepeatEmpetDeps from "./183-repeat-old-value";
+//184  effect案例-修复聊天室加密开关
+import RepeatSwitchRoom from "./184-repeat-switch-connect";
+//185  effect案例-填充一系列选择框
+import EffectAlone from "./185-block-form";
 export default function App() {
   return (
     <>   
@@ -538,6 +556,15 @@ export default function App() {
           <Route path="/case-174" element={<UseMemoTodoList/>} />
           <Route path="/case-175" element={<NoEffectReState/>} />
           <Route path="/case-176" element={<NoEffectForm/>} />
+          <Route path="/case-177" element={<EffectResync/>} />
+          <Route path="/case-178" element={<EffectReactiveVle/>} />
+          <Route path="/case-179" element={<EffecEmptyDeps/>} />
+          <Route path="/case-180" element={<LinterCheckDeps/>} />
+          <Route path="/case-181" element={<RepeateIptResync/>} />
+          <Route path="/case-182" element={<EffectChangeSync/>} />
+          <Route path="/case-183" element={<RepeatEmpetDeps/>} />
+          <Route path="/case-184" element={<RepeatSwitchRoom/>} />
+          <Route path="/case-185" element={<EffectAlone/>} />
         {/*</Route>*/}
       </Routes>
     </>
