@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
-import { useEffectEvent } from 'react';
+//import { useEffectEvent } from 'react';
 export default function RepeatFreezeTimer() { 
   const [count, setCount] = useState(0);
   const [add, setAdd] = useState(1);
-  const updateCount = useEffectEvent(() => { 
-    setCount(c => c + add);
-  })
+  // const updateCount = useEffectEvent(() => { 
+  //   setCount(c => c + add);
+  // })
   useEffect(()=>{
     const id = setInterval(() => {
-      updateCount();
+      setCount(c => c + add);
+      //updateCount();
     }, 1000);
     return () => {clearInterval(id)}
     // eslint-disable-next-line react-hooks/exhaustive-deps

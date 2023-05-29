@@ -1,19 +1,20 @@
 import { showNotice } from "./187-notification";
 import { createConnection } from "./187-chat";
 import { useEffect, useState } from "react";
-import { useEffectEvent } from 'react';
+// import { useEffectEvent } from 'react';
 const serverUrl = "https://localhost:1234";
 
 function ChatRoom({ room, theme }) {
-  const onConn = useEffectEvent(room => { 
-    showNotice('Welcome to '+room,theme)
-  })
+  // const onConn = useEffectEvent(room => { 
+  //   showNotice('Welcome to '+room,theme)
+  // })
   useEffect(() => { 
     const conn = createConnection(serverUrl, room);
     let id 
     conn.on('connected', () => { 
       id = setTimeout(() => {
-        onConn(room);
+        //onConn(room);
+        showNotice('Welcome to '+room,theme)
       }, 2000); 
     })
     conn.connect();
