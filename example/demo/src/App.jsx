@@ -375,6 +375,22 @@ import RepeatEmpetDeps from "./183-repeat-old-value";
 import RepeatSwitchRoom from "./184-repeat-switch-connect";
 //185  effect案例-填充一系列选择框
 import EffectAlone from "./185-block-form";
+//186  事件处理程序和effect
+import EvenetAndEffect from "./186-event-effect";
+//187  effect中多余的反应逻辑
+import EffectOverLogic from "./187-effect-reaction-logic";
+//188  effect事件提取非反应逻辑
+import EffectGetNotLogic from "./188-get-not-reaction-logic";
+//189  抑制依赖性linter-陈旧值
+import CubLinterOldV from "./189-curb-lint";
+//190  effect事件案例-修复一个不更新的变量
+import UpdateTimer from "./190-effect-event-state";
+//191  effect事件案例-修复冻结计数器
+import RepeatFreezeTimer from "./191-repeat-freezn-timer";
+//192  effect事件案例-修复不可调整的延迟
+import RepeatDelay from "./192-repeat-delay";
+//193  effect事件案例-修复延迟通知
+import RepeatDelayInfo from "./193-repeat-delay-info";
 export default function App() {
   return (
     <>   
@@ -565,6 +581,14 @@ export default function App() {
           <Route path="/case-183" element={<RepeatEmpetDeps/>} />
           <Route path="/case-184" element={<RepeatSwitchRoom/>} />
           <Route path="/case-185" element={<EffectAlone/>} />
+          <Route path="/case-186" element={<EvenetAndEffect/>} />
+          <Route path="/case-187" element={<EffectOverLogic/>} />
+          <Route path="/case-188" element={<EffectGetNotLogic/>} />
+          <Route path="/case-189" element={<CubLinterOldV/>} />
+          <Route path="/case-190" element={<UpdateTimer/>} />
+          <Route path="/case-191" element={<RepeatFreezeTimer/>} />
+          <Route path="/case-192" element={<RepeatDelay/>} />
+          <Route path="/case-193" element={<RepeatDelayInfo/>} />
         {/*</Route>*/}
       </Routes>
     </>
