@@ -16,7 +16,7 @@ function ChatRoom({ room, theme }) {
     })
     conn.connect();
     return ()=> conn.disconnect();
-  },[room,onConn])
+  },[room])
   return <h1>Welcome to the {room} room!</h1>
 }
 
