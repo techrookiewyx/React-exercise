@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { experimental_useEffectEvent as useEffectEvent } from 'react';
+import { useEffectEvent } from 'react';
 export default function RepeatFreezeTimer() { 
   const [count, setCount] = useState(0);
   const [add, setAdd] = useState(1);

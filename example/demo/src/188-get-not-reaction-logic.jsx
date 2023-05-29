@@ -1,7 +1,7 @@
 import { showNotice } from "./187-notification";
 import { createConnection } from "./187-chat";
 import { useEffect, useState } from "react";
-import { experimental_useEffectEvent as useEffectEvent } from 'react';
+import { useEffectEvent } from 'react';
 const serverUrl = "https://localhost:1234";
 
 function ChatRoom({ room, theme }) {
