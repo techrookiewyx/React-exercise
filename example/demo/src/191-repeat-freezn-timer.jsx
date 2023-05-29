@@ -13,7 +13,7 @@ export default function RepeatFreezeTimer() {
     }, 1000);
     return () => {clearInterval(id)}
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+  },[add])
   return (
     <>
       <h1>

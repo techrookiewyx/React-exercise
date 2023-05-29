@@ -23,7 +23,7 @@ function ChatRoom({ room, theme }) {
       clearTimeout(id)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[room])
+  },[room,theme])
   return <h1>Welcome to the {room} room!</h1>
 }
 
