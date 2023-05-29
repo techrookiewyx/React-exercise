@@ -9,7 +9,8 @@ export default function RepeatDelay() {
         setCount(c=>c+add)
     }, delay);
     return ()=> clearInterval(id)
-  },[delay,add])
+  }, [delay, add])
+  
   return (
     <>
       <h1>Counter: {count}{" "}<button onClick={() => { setCount(0) }}>Reset</button></h1>
