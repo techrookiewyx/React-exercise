@@ -391,6 +391,22 @@ import RepeatFreezeTimer from "./191-repeat-freezn-timer";
 import RepeatDelay from "./192-repeat-delay";
 //193  effect事件案例-修复延迟通知
 import RepeatDelayInfo from "./193-repeat-delay-info";
+//194  linter检查依赖项是否与代码匹配
+import DepsWithCode from "./194-linter";
+//195  删除依赖项-移除组件中反应值
+import RemoveDeps from "./195-remove-reaction-value";
+//196  忽略linter导致难以发现的错误
+import IgnoreLinterFault from "./196-linter-fault";
+//197  对象作为反应值时的问题
+import ObjAsReactionValue from "./197-obj-as-reaction-value";
+//198  将对象移动到effect中
+import MoveOjbToEffect from "./198-move-objTo-effect";
+//199  effect依赖去除-修复重置间隔
+import RepeatResetGap from "./199-repeat-reset-timer";
+//200  effect依赖去除-修复重新触发的动画
+import RepeatAnimation from "./200-repeat-retouch-animate";
+//201  effecty依赖去除-修复重新连接的聊天
+import RepeatRelink from "./201-repeat-reLink";
 export default function App() {
   return (
     <>   
@@ -589,6 +605,14 @@ export default function App() {
           <Route path="/case-191" element={<RepeatFreezeTimer/>} />
           <Route path="/case-192" element={<RepeatDelay/>} />
           <Route path="/case-193" element={<RepeatDelayInfo/>} />
+          <Route path="/case-194" element={<DepsWithCode/>} />
+          <Route path="/case-195" element={<RemoveDeps/>} />
+          <Route path="/case-196" element={<IgnoreLinterFault/>} />
+          <Route path="/case-197" element={<ObjAsReactionValue/>} />
+          <Route path="/case-198" element={<MoveOjbToEffect/>} />
+          <Route path="/case-199" element={<RepeatResetGap/>} />
+          <Route path="/case-200" element={<RepeatAnimation/>} />
+          <Route path="/case-201" element={<RepeatRelink/>} />
         {/*</Route>*/}
       </Routes>
     </>
