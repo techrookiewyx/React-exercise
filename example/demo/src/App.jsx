@@ -407,6 +407,28 @@ import RepeatResetGap from "./199-repeat-reset-timer";
 import RepeatAnimation from "./200-repeat-retouch-animate";
 //201  effecty依赖去除-修复重新连接的聊天
 import RepeatRelink from "./201-repeat-reLink";
+//202  使网络连接与state保持同步
+import StatusBar from "./202-net-state";
+//203  连接逻辑转移
+import SaveButton from "./203-logic-move";
+//204  自定义useOnline逻辑复用
+import HookOnline from "./204-customize-hook-online";
+//205  state独立性
+import IndependentStateForm from "./205-independent-state";
+//206  自定义useFormIpt
+import HoookForm from "./206-customize-hook-formipt";
+//207  在自定义HOOK中传递反应值
+import HookChatRoom from "./207-customize-hook-chatroom";
+//208  useOnline的重写
+import HookOnlineRe from "./208-useOnline-rewrite";
+//209  自定义HookuseFadeIn-动画
+import HookFadeIn from "./209-customize-hook-fadein";
+//210  自定义HOOK案例-提取一个useCounter钩子
+import HookCount from "./210-case-useCount";
+//211  自定义HOOK案例-使计数器延迟可配置
+import HookCountDelay from "./211-case-useCountDelay";
+//212  自定义HOOK案例-小球延迟运动
+import HookDelayValue from "./212-case-useDelayValue";
 export default function App() {
   return (
     <>   
@@ -613,6 +635,17 @@ export default function App() {
           <Route path="/case-199" element={<RepeatResetGap/>} />
           <Route path="/case-200" element={<RepeatAnimation/>} />
           <Route path="/case-201" element={<RepeatRelink/>} />
+          <Route path="/case-202" element={<StatusBar/>} />
+          <Route path="/case-203" element={<SaveButton/>} />
+          <Route path="/case-204" element={<HookOnline/>} />
+          <Route path="/case-205" element={<IndependentStateForm/>} />
+          <Route path="/case-206" element={<HoookForm/>} />
+          <Route path="/case-207" element={<HookChatRoom/>} />
+          <Route path="/case-208" element={<HookOnlineRe/>} />
+          <Route path="/case-209" element={<HookFadeIn/>} />
+          <Route path="/case-210" element={<HookCount/>} />
+          <Route path="/case-211" element={<HookCountDelay/>} />
+          <Route path="/case-212" element={<HookDelayValue/>} />
         {/*</Route>*/}
       </Routes>
     </>
