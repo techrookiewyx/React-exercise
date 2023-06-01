@@ -427,8 +427,20 @@ import HookFadeIn from "./209-customize-hook-fadein";
 import HookCount from "./210-case-useCount";
 //211  自定义HOOK案例-使计数器延迟可配置
 import HookCountDelay from "./211-case-useCountDelay";
+//211-2  从useCounter中提取useInerval
+import DrawInterval from "./211-2-gethook-interval";
 //212  自定义HOOK案例-小球延迟运动
 import HookDelayValue from "./212-case-useDelayValue";
+//213  根据UI拆分组件并构建静态版本
+import StaticVer from "./213-static-version";
+//214  根据静态版本创建合适位置的state
+import CreateState from "./214-add-state";
+//215  添加反向数据处理
+import AddDateFlow from "./215-add-date-flow";
+//216  订阅外部store
+import OrderOutStore from "./216-order-out-store";
+//217  订阅浏览器API
+import OrderBapi from "./217-order-bowser-api";
 export default function App() {
   return (
     <>   
@@ -645,7 +657,13 @@ export default function App() {
           <Route path="/case-209" element={<HookFadeIn/>} />
           <Route path="/case-210" element={<HookCount/>} />
           <Route path="/case-211" element={<HookCountDelay/>} />
-          <Route path="/case-212" element={<HookDelayValue/>} />
+          <Route path="/case-211-2" element={<DrawInterval/>} />  
+          <Route path="/case-212" element={<HookDelayValue />} />
+          <Route path="/case-213" element={<StaticVer/>} />
+          <Route path="/case-214" element={<CreateState/>} />
+          <Route path="/case-215" element={<AddDateFlow/>} />
+          <Route path="/case-216" element={<OrderOutStore/>} />
+          <Route path="/case-217" element={<OrderBapi/>} />
         {/*</Route>*/}
       </Routes>
     </>
