@@ -658,6 +658,9 @@ export default function UlList() {
         <li>
           <Link to="/case-217">案例217</Link>
         </li>
+        <li>
+          <Link to="/case-218">案例218</Link>
+        </li>
       </ul>
       <hr />
       {/*<Outlet/>*/}

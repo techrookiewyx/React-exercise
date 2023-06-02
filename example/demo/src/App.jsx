@@ -441,6 +441,8 @@ import AddDateFlow from "./215-add-date-flow";
 import OrderOutStore from "./216-order-out-store";
 //217  订阅浏览器API
 import OrderBapi from "./217-order-bowser-api";
+//218  井字棋游戏
+import TicGame from "./218-TicTacToe-game";
 export default function App() {
   return (
     <>   
@@ -664,6 +666,7 @@ export default function App() {
           <Route path="/case-215" element={<AddDateFlow/>} />
           <Route path="/case-216" element={<OrderOutStore/>} />
           <Route path="/case-217" element={<OrderBapi/>} />
+          <Route path="/case-218" element={<TicGame/>} />
         {/*</Route>*/}
       </Routes>
     </>
