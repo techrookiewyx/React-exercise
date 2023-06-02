@@ -6,7 +6,7 @@ function Square({value,onSquareClick}) {
     {value}
   </button>;
 }
-function Board({squares,fst,onPlay,total}) {
+function Board({squares,fst,onPlay}) {
   function handleClick(i) {
     if(squares[i] || calWinner(squares)) return 
     const nextSquares = squares.slice();
@@ -65,19 +65,16 @@ function Board({squares,fst,onPlay,total}) {
   );
 }
 export default function TicGame() {
-  const [fst, setFst] = useState(true);
   const [squares, setSquares] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const current = squares[currentMove];
-  console.log(squares);
+  const fst = currentMove % 2 === 0;
   function handlePlay(newSq) {
     const nextHis = [...squares.slice(0, currentMove + 1), newSq];
     setSquares(nextHis);
-    setFst(!fst);
     setCurrentMove(nextHis.length - 1);
   }
   function jumpTo(index) {
-    setFst(index % 2 === 0);
     setCurrentMove(index);
   }
   const move = squares.map((ele,index) => { 
