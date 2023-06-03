@@ -443,6 +443,24 @@ import OrderOutStore from "./216-order-out-store";
 import OrderBapi from "./217-order-bowser-api";
 //218  井字棋游戏
 import TicGame from "./218-TicTacToe-game";
+//219  案例补充-关联事件切换背景
+import ColorSwitch from "./219-case-event-rela";
+//220  案例补充-添加和删除一个 CSS class
+import AddRemCssClass from "./220-case-add-remove-css";
+//221  案例补充-修复一个未更新的组件
+import RepeatNotUpdate from "./221-case-repeat-notupdate";
+//222  案例补充-清除正在加载的图片
+import ClearLoadingPic from "./222-LoadPic";
+//223  案例补充-修复坏掉的时钟
+import RepBrokenClock from "./223-broken-clock";
+//224  案例补充-修复损坏的资料
+import RepeatDataCard from "./224-repeate-datacard";
+//225  案例补充-修复触发两次的间隔
+import RepTwiceTrigger from "./225-repeat-twice-trigger";
+//226  案例补充-修复在Effect中获取
+import RepEffGetDate from "./226-repeat-effet-getdata";
+//227  案例补充-修复损坏的故事集
+import RepeatStoryList  from "./227-repeat-storylist";
 export default function App() {
   return (
     <>   
@@ -667,6 +685,15 @@ export default function App() {
           <Route path="/case-216" element={<OrderOutStore/>} />
           <Route path="/case-217" element={<OrderBapi/>} />
           <Route path="/case-218" element={<TicGame/>} />
+          <Route path="/case-219" element={<ColorSwitch/>} />
+          <Route path="/case-220" element={<AddRemCssClass/>} />
+          <Route path="/case-221" element={<RepeatNotUpdate/>} />
+          <Route path="/case-222" element={<ClearLoadingPic/>} />
+          <Route path="/case-223" element={<RepBrokenClock/>} />
+          <Route path="/case-224" element={<RepeatDataCard/>} />
+          <Route path="/case-225" element={<RepTwiceTrigger/>} />
+          <Route path="/case-226" element={<RepEffGetDate/>} />
+          <Route path="/case-227" element={<RepeatStoryList/>} />
         {/*</Route>*/}
       </Routes>
     </>
