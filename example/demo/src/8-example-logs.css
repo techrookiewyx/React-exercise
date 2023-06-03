@@ -147,3 +147,28 @@
   font-size: 50px;
   background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
+
+.day223 {
+  background: #fff;
+  color: #222;
+}
+.night223 {
+  background: #222;
+  color: #fff;
+}
+
+.ul226 {
+  margin: 0;
+  list-style-type: none;
+}
+
+.li226 {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  float: left;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 70px;
+  height: 100px;
+}
