@@ -461,6 +461,16 @@ import RepTwiceTrigger from "./225-repeat-twice-trigger";
 import RepEffGetDate from "./226-repeat-effet-getdata";
 //227  案例补充-修复损坏的故事集
 import RepeatStoryList  from "./227-repeat-storylist";
+//228  案例补充-修复事件处理函数
+import LightSwitch from "./228-add-case-event";
+//229  案例补充-children prop
+import ChildrenTransCode from "./229-case-chindren-props";
+//230  案例补充-聊天室加密链接
+import SecretChat from "./230-case-sercet-char";
+//231  案例补充-跳过重新计算
+import JumpRecal from "./231-jump-over-recal";
+//232  案例补充-hook修复重置间隔
+import RepJiange from "./232-rep-jiange";
 export default function App() {
   return (
     <>   
@@ -694,6 +704,11 @@ export default function App() {
           <Route path="/case-225" element={<RepTwiceTrigger/>} />
           <Route path="/case-226" element={<RepEffGetDate/>} />
           <Route path="/case-227" element={<RepeatStoryList/>} />
+          <Route path="/case-228" element={<LightSwitch/>} />
+          <Route path="/case-229" element={<ChildrenTransCode/>} />
+          <Route path="/case-230" element={<SecretChat/>} />
+          <Route path="/case-231" element={<JumpRecal/>} />
+          <Route path="/case-232" element={<RepJiange/>} />
         {/*</Route>*/}
       </Routes>
     </>
