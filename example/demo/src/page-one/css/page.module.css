@@ -1,0 +1,43 @@
+.w {
+  width: 1136px;
+  margin: 0 auto;
+}
+
+.w1 {
+  width: 1195px;
+  margin: 0 auto;
+}
+
+.brand{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 57px;
+  box-sizing: border-box;
+  height: 388px;
+}
+.real_case{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.real_case img{
+  width: 1019px;
+  height: 510px;
+}
+.left_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 509px;
+}
+
+.left_nav li{
+  width: 150px;
+  height: 58px;
+  background-color: #a5971c;
+  text-align: center;
+  line-height: 58px;
+  font-size: 30px;
+  color: #fff;
+}
+
