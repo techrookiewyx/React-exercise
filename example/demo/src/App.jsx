@@ -474,7 +474,7 @@ import RepJiange from "./232-rep-jiange";
 //页面一
 import PageOne from "./page-one/PageOne";
 //页面二
-import PageTwo from "./page-two/PageTwo";
+// import PageTwo from "./page-two/PageTwo";
 export default function App() {
   return (
     <>   
