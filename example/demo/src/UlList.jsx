@@ -5,6 +5,9 @@ export default function UlList() {
     <div>
       <ul style={{ fontSize: 20 }}>
         <li>
+          <Link to="/case-233">页面一</Link>
+        </li>
+        <li>
           <Link to="/case-1">案例1</Link>
         </li>
         <li>
@@ -703,6 +706,9 @@ export default function UlList() {
         <li>
           <Link to="/case-232">案例232</Link>
         </li>
+        {/* <li>
+          <Link to="/case-234">页面二</Link>
+        </li> */}
       </ul>
       <hr />
       {/*<Outlet/>*/}
