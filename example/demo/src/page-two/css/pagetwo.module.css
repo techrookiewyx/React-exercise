@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+.main{
+  background-color: #9fa4aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
