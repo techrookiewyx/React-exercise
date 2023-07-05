@@ -474,7 +474,8 @@ import RepJiange from "./232-rep-jiange";
 //页面一
 import PageOne from "./page-one/PageOne";
 //页面二
-// import PageTwo from "./page-two/PageTwo";
+import PageTwo from "./page-two/PageTwo";
+import PageThree from "./page-three/PageThree";
 export default function App() {
   return (
     <>   
@@ -713,8 +714,9 @@ export default function App() {
           <Route path="/case-230" element={<SecretChat/>} />
           <Route path="/case-231" element={<JumpRecal/>} />
           <Route path="/case-232" element={<RepJiange/>} />
-          <Route path="/case-233" element={<PageOne/>} />
-          {/* <Route path="/case-234" element={<PageTwo/>} /> */}
+          <Route path="/page-one" element={<PageOne/>} />
+          <Route path="/page-two" element={<PageTwo/>} />
+          <Route path="/case-three" element={<PageThree/>} />
         {/*</Route>*/}
       </Routes>
     </>
