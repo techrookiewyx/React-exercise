@@ -10,9 +10,9 @@ export default function UlList() {
         <li>
           <Link to="/page-two">页面二</Link>
         </li>
-        {/* <li>
+        <li>
           <Link to="/page-three">页面三</Link>
-        </li> */}
+        </li>
         <li>
           <Link to="/case-1">案例1</Link>
         </li>
