@@ -1,0 +1,14 @@
+.w {
+  width: 952px;
+  margin: 0 auto;
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pailie{
+  display: flex;
+  justify-content: space-between;
+}
