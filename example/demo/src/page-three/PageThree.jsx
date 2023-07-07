@@ -200,7 +200,7 @@ export default function PageThree() {
         <Desription>
           <div><img src={ require("./images/Whoweare.png") } width="86px" alt="" /></div>
           <h3>STORY ABOUT US</h3>
-          <div class="line"></div>
+          <div className="line"></div>
         </Desription>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim</span>
@@ -209,7 +209,7 @@ export default function PageThree() {
           <WimgItem>
             <div><img src={require("./images/Layer16.jpg")} width="301px" alt="" /></div>
             <section className={`${p3.clearfix}`}>
-              <a onClick={e => { e.preventDefault() }} class="active" href="/#"><img src={require("./images/facebook.png")} width="10px" alt="" /></a>
+              <a onClick={e => { e.preventDefault() }} className="active" href="/#"><img src={require("./images/facebook.png")} width="10px" alt="" /></a>
               <a onClick={e => { e.preventDefault() }} href="/#"><img src={require("./images/twitter.png")} width="20px" alt="" /></a>
               <a onClick={e => { e.preventDefault() }} href="/#"><img src={require("./images/pinterest.png")} width="16px" alt="" /></a>
               <a onClick={e => { e.preventDefault() }} href="/#"><img src={require("./images/instagram.png")} width="20px" alt="" /></a>
@@ -230,7 +230,7 @@ export default function PageThree() {
         </div>
       </section>
       <section className="brand-wapper">
-        <div class={`brand ${p3.w}`}>
+        <div className={`brand ${p3.w}`}>
           <img src={require("./images/1.jpg")} width="90px" alt="" />
           <img src={require("./images/2.jpg")} width="75px" alt="" />
           <img src={require("./images/3.jpg")} width="100px" alt="" />
@@ -243,7 +243,7 @@ export default function PageThree() {
         <Desription>
           <div><img src={require("./images/do.png")} width="86px" alt="" /></div>
           <h3>SOME OF OUR WORK</h3>
-          <div class="line"></div>
+          <div className="line"></div>
         </Desription>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim</span>
@@ -279,9 +279,9 @@ export default function PageThree() {
           <Desription>
             <div><img src={require("./images/HappyClients.png")} width="86px" alt="" /></div>
             <h3>WHAT PEOPLE SAY</h3>
-            <div class="line"></div>
+            <div className="line"></div>
           </Desription>
-          <div class="minglist">
+          <div className="minglist">
             <FamousItem>
               <section><img src={require("./images/Layer47.png")} width="87px" alt="" /></section>
               <article>
@@ -307,7 +307,7 @@ export default function PageThree() {
               </article>
             </FamousItem>
           </div>
-          <div class="minglist">
+          <div className="minglist">
             <FamousItem>
               <section><img src={require("./images/Layer50.png")} width="87px" alt="" /></section>
               <article>
@@ -339,7 +339,7 @@ export default function PageThree() {
         <Desription>
           <div><img src={require("./images/Ourstories.png")} width="86px" alt="" /></div>
           <h3>LATEST BLOG</h3>
-          <div class="line"></div>
+          <div className="line"></div>
         </Desription>
         <div className={`${p3.pailie}`}>
           <StItem>
