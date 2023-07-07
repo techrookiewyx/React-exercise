@@ -158,6 +158,7 @@ export const Service = styled.ul`
     text-align: center;
     font-size: 21px;
     color: #02b687;
+    cursor: pointer;
     & > img {
       width: 113px;
       height: 113px;
@@ -182,6 +183,7 @@ export const BrandItd = styled.article`
     line-height: 1.2;
     span {
       color: #02b687;
+      cursor: pointer;
     }
   }
 `;
@@ -305,6 +307,7 @@ export const Cooperate = styled.section`
     li {
       float: left;
       margin-right: 23px;
+      cursor: pointer;
       img {
         width: 115px;
         height: 68px;

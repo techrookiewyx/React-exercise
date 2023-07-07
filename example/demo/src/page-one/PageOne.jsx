@@ -149,7 +149,7 @@ export default function PageOne() {
             </BrandTitle>
             <img src={require('./images/brand-love.jpg')}  alt="" />
             <p>
-              友爱齿科（北京总部），坐落于北京大兴区黄村海子角海北路38号。是经北京市卫生局批准<span>...[详细]</span>
+              友爱齿科（北京总部），坐落于北京大兴区黄村海子角海北路38号。是经北京市卫生局批准...<span>[详细]</span>
             </p>
           </BrandItd>
           <BrandItd2>
@@ -171,7 +171,7 @@ export default function PageOne() {
              </div>
            </Slider>  
           </BrandItd2>
-          <section>
+          <section style={{cursor:"pointer"}}>
             <img src={require('./images/qr-code.jpg')}  width='307px' alt=''/>
           </section>
         </div>
