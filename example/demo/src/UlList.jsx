@@ -14,6 +14,9 @@ export default function UlList() {
           <Link to="/page-three">页面三</Link>
         </li>
         <li>
+          <Link to="/page-four">页面四</Link>
+        </li>
+        <li>
           <Link to="/case-1">案例1</Link>
         </li>
         <li>
