@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "MR";
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: "MB";
+  src: url('../fonts/Montserrat-Bold.otf');
+}
+@font-face {
+  font-family: "ML";
+  src: url('../fonts/Montserrat-Light.otf');
+}
+@font-face {
+  font-family: "RR";
+  src: url('../fonts/Roboto-Regular.ttf');
+}
