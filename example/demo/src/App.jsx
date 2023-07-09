@@ -479,6 +479,8 @@ import PageTwo from "./page-two/PageTwo";
 import PageThree from "./page-three/PageThree";
 //页面四
 import PageFour from "./page-four/PageFour";
+//页面五
+import PageFive from "./page-five/PageFive";
 export default function App() {
   return (
     <>   
@@ -721,6 +723,7 @@ export default function App() {
           <Route path="/page-two" element={<PageTwo/>} />
           <Route path="/page-three" element={<PageThree/>} />
           <Route path="/page-four" element={<PageFour/>} />
+          <Route path="/page-five" element={<PageFive/>} />
         {/*</Route>*/}
       </Routes>
     </>
