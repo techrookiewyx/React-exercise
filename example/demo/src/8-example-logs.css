@@ -199,3 +199,10 @@ ul {
   padding: 0;
   font-size: 24px;
 }
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
