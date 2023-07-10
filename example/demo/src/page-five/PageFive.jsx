@@ -6,6 +6,8 @@ import { ContentBack } from "./components/ContentBack";
 import { Footer } from "./components/Footer";
 import { LookBook } from "./components/LookBook";
 import { ShopList } from "./components/ShopList";
+import { PageSix } from "./components/PageSix";
+import PageSeven from "./components/PageSeven";
 export default function PageFive() {
   useEffect(() => { 
     const body = document.body;
@@ -22,10 +24,10 @@ export default function PageFive() {
     <WholeWapper>
       <Header />
       <ContentBack />
-      <div className="line"></div>
       <ShopList/>
-      <div className="line"></div>
       <LookBook />
+      <PageSix/>
+      <PageSeven />
       <Footer />
     </WholeWapper>
   )

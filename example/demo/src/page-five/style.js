@@ -85,7 +85,7 @@ export const WebNavStyle = styled.nav`
           }
         }
       }
-      li:first-child::after {
+      li.active::after {
         content: "";
         border-color: #00c8c8;
       }
@@ -113,6 +113,18 @@ export const WebNavStyle = styled.nav`
           font-weight: bold;
           color: #ffffff;
           line-height: 36px;
+        }
+      }
+      li:last-child > .sub-nav {
+        height: 301px;
+        & > ul{
+          margin-right: 35px;
+        }
+        & > section{
+          margin-top: 10px;
+        }
+        ul .seeight a {
+          color: #00c8c8;
         }
       }
       li:hover > .sub-nav {
