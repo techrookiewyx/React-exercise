@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-exercise/static/css/main.a1b9d04b.css",
-    "main.js": "/React-exercise/static/js/main.d9cb3b78.js",
+    "main.js": "/React-exercise/static/js/main.0f2986a6.js",
     "static/media/back.png": "/React-exercise/static/media/back.de293ecfd9eb457351c2.png",
     "static/media/Hind-Guntur-SemiBold.ttf": "/React-exercise/static/media/Hind-Guntur-SemiBold.8700de6c0c1aea3c982f.ttf",
     "static/media/Hind-Guntur.ttf": "/React-exercise/static/media/Hind-Guntur.24eb35e928682457facd.ttf",
@@ -9,6 +9,7 @@
     "static/media/export_03.jpg": "/React-exercise/static/media/export_03.0a91256cb30bf7b3c64d.jpg",
     "static/media/Didact-Gothic-Regular.ttf": "/React-exercise/static/media/Didact-Gothic-Regular.301b813a26bc7849c1cf.ttf",
     "static/media/Roboto-Regular.ttf": "/React-exercise/static/media/Roboto-Regular.f25bd05915c1a3468d3d.ttf",
+    "static/media/map.jpg": "/React-exercise/static/media/map.69842db70af1692313aa.jpg",
     "static/media/brand-activity.jpg": "/React-exercise/static/media/brand-activity.7aa6708dfd95cde944a3.jpg",
     "static/media/export-5_03.jpg": "/React-exercise/static/media/export-5_03.8cb93326aa9e3c4c9997.jpg",
     "static/media/export-4_03.jpg": "/React-exercise/static/media/export-4_03.3440558ae3e4332fae9b.jpg",
@@ -16,16 +17,20 @@
     "static/media/White.png": "/React-exercise/static/media/White.a00442b9814238b0517e.png",
     "static/media/technology-2.jpg": "/React-exercise/static/media/technology-2.5a4732847ab74597063d.jpg",
     "static/media/AVE.jpg": "/React-exercise/static/media/AVE.88588a8d6defe5e973cc.jpg",
+    "static/media/at3.jpg": "/React-exercise/static/media/at3.975f1bc8961b37b3bef9.jpg",
     "static/media/item3.jpg": "/React-exercise/static/media/item3.a843ca222f1ac88f6b7f.jpg",
     "static/media/Layer53.jpg": "/React-exercise/static/media/Layer53.e99a9cda0c620ed992bc.jpg",
     "static/media/tecnology-1.jpg": "/React-exercise/static/media/tecnology-1.caa98fc796803b5472ba.jpg",
     "static/media/item4.jpg": "/React-exercise/static/media/item4.a3efc9f0837ded25239a.jpg",
+    "static/media/intro.jpg": "/React-exercise/static/media/intro.1fc743ed620d1b0b1513.jpg",
     "static/media/Layer36.png": "/React-exercise/static/media/Layer36.1d5cd772b41c674e9889.png",
     "static/media/qr-code.jpg": "/React-exercise/static/media/qr-code.9c9edfd5fefbb1ad8440.jpg",
     "static/media/bg.jpg": "/React-exercise/static/media/bg.5dd20042d4146a3a5ce8.jpg",
     "static/media/my.jpg": "/React-exercise/static/media/my.9b8ec0c0eb5a7c818089.jpg",
     "static/media/Montserrat-Bold.otf": "/React-exercise/static/media/Montserrat-Bold.ee9153b4cabd3af9625e.otf",
+    "static/media/at1.jpg": "/React-exercise/static/media/at1.356ac8ba5e2ada49a73a.jpg",
     "static/media/Montserrat-Light.otf": "/React-exercise/static/media/Montserrat-Light.d48e0efcfd560dd02629.otf",
+    "static/media/at2.jpg": "/React-exercise/static/media/at2.6df80f158fc1f58bcd03.jpg",
     "static/media/Layer32.jpg": "/React-exercise/static/media/Layer32.5cf2e4bbb245097fbf29.jpg",
     "static/media/Layer33.jpg": "/React-exercise/static/media/Layer33.6033c6866d045e1b44a8.jpg",
     "static/media/Layer19.jpg": "/React-exercise/static/media/Layer19.d357f65a692e092e043e.jpg",
@@ -66,6 +71,7 @@
     "static/media/s5.jpg": "/React-exercise/static/media/s5.5705ba59333ed18d47b9.jpg",
     "static/media/s3.jpg": "/React-exercise/static/media/s3.f29a35d4a3fa384f10fe.jpg",
     "static/media/Bitmap_99.png": "/React-exercise/static/media/Bitmap_99.b2614220b86b71adbbee.png",
+    "static/media/REPLACEcopy4.png": "/React-exercise/static/media/REPLACEcopy4.bec83ddc46547bc1941d.png",
     "static/media/Layer54.jpg": "/React-exercise/static/media/Layer54.e8c109fc91c8cb7fcc77.jpg",
     "static/media/iconfont.ttf?t=1688891455349": "/React-exercise/static/media/iconfont.3791601439acd8c59b39.ttf",
     "static/media/slick.svg": "/React-exercise/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -76,10 +82,10 @@
     "static/media/slick.woff": "/React-exercise/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React-exercise/index.html",
     "main.a1b9d04b.css.map": "/React-exercise/static/css/main.a1b9d04b.css.map",
-    "main.d9cb3b78.js.map": "/React-exercise/static/js/main.d9cb3b78.js.map"
+    "main.0f2986a6.js.map": "/React-exercise/static/js/main.0f2986a6.js.map"
   },
   "entrypoints": [
     "static/css/main.a1b9d04b.css",
-    "static/js/main.d9cb3b78.js"
+    "static/js/main.0f2986a6.js"
   ]
 }
