@@ -82,9 +82,26 @@ export function WebNav() {
           </section>
         </li>
         <li><a onClick={handleClick} href="/#">WOMENS</a></li>
-        <li><a href="../sixth-page/index.html">THE BRAND</a></li>
+        <li><a href="/six-page">THE BRAND</a></li>
         <li><a href="../seventh/index.html">LOACAL STORES</a></li>
-        <li><a href="../eighth-page/index.html">LOOK BOOK</a></li>
+        <li>
+            <a href="../eighth-page/index.html">LOOK BOOK</a>
+            <section className="sub-nav">
+                    <ul>
+                      <h3>OUR LOOKBOOK</h3>
+                      <li><a onClick={handleClick} href="/#">Latest Posts (mixed)</a></li>
+                      <li><a onClick={handleClick} href="/#">Men’s Lookbook</a></li>
+                      <li><a onClick={handleClick} href="/#">Women’s Lookbook</a></li>
+                    </ul>
+                    <ul>
+                      <h3>YOUR LOOKBOOK</h3>
+                      <li><a onClick={handleClick} href="/#">View and Edit</a></li>
+                      <li><a onClick={handleClick} href="/#">Share</a></li>
+                      <li><a onClick={handleClick} href="/#">Delete</a></li>
+                    </ul>
+                    <section>AUTUMN SALE! UP TO 50% OFF</section>
+            </section>
+        </li>
       </ul>
       <section className="search">
         <input type="text" placeholder="Search.." />
