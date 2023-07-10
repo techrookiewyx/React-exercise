@@ -43,7 +43,7 @@ const ShopNavStyle = styled.nav`
     }
   }
 `;
-function ShopNav({data,onClick}) { 
+export function ShopNav({data,onClick}) { 
   return (
     <ShopNavStyle>
       <ul>
@@ -59,9 +59,11 @@ export function ShopList() {
     e.preventDefault();
   }
   return (
+    <>
+    <div className="line"></div>
     <ShopListStyle>
-    <ShopNav data={fivedata} onClick={handleClick} />
-    <section className="item1">
+      <ShopNav data={fivedata} onClick={handleClick} />
+      <section className="item1">
         <div className="it1">
         <a onClick={handleClick} href="/#"><img src={require("../images/item1.jpg")} alt="" /></a>
           <p><sup>£</sup>89.99</p>
@@ -104,8 +106,8 @@ export function ShopList() {
             </div>
           </section>
         </div>
-    </section>
-    <section className="item2">
+      </section>
+      <section className="item2">
         <div className="it1">
           <a onClick={handleClick} href="/#"><img src={require("../images/item4.jpg")} alt="" /></a>
           <p><sup>£</sup><span>107</span> <sup>£</sup>89.99</p>
@@ -153,7 +155,9 @@ export function ShopList() {
             </div>
           </section>
         </div>
-    </section>
-  </ShopListStyle>
+      </section>
+      </ShopListStyle>
+    <div className="line"></div>
+    </>
   )
 }
