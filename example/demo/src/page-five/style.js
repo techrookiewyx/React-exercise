@@ -123,6 +123,8 @@ export const WebNavStyle = styled.nav`
         & > section{
           margin-top: 10px;
         }
+      }
+      li > .sub-nav {
         ul .seeight a {
           color: #00c8c8;
         }

@@ -171,7 +171,7 @@ export function PageSixTopNav({page}) {
                 <ul>
                     <h3>CASUALS</h3>
                     <li><a onClick={handleClick} href="/#">Jackets</a></li>
-                    <li><a href="../ninth-page/index.html">Hoodies & Sweatshirts</a></li>
+                    <li className={page === 'nine' ? 'seeight' : ''}><a href="../ninth-page/index.html">Hoodies & Sweatshirts</a></li>
                     <li><a onClick={handleClick} href="/#">Polo Shirts</a></li>
                     <li><a onClick={handleClick} href="/#">Sportswear</a></li>
                     <li><a onClick={handleClick} href="/#">Trousers & Chinos</a></li>
