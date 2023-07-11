@@ -1,25 +1,6 @@
 import { styled } from "styled-components";
 const FooterStyle = styled.footer`
   height: 474px;
-  .f-bottom {
-  height: 33px;
-  line-height: 33px;
-  background-color: #333333;
-    & > footer{
-      display: flex;
-      justify-content: space-between;
-      width: 870px;
-      margin: 0 auto;
-      height: 33px;
-      font-size: 10px;
-      font-weight: 400;
-      color: #999999;
-      & > article:last-child > section {
-        float: left;
-        margin-left: 30px;
-      }
-    }
-  }
 `;
 const FooterTopSty = styled.section`
   height: 441px;
@@ -102,7 +83,26 @@ const FooterTopSty = styled.section`
     }
   }
 `;
-function FooterTop() {
+const FooterBootmStyle = styled.section`
+   height: 33px;
+  line-height: 33px;
+  background-color: #333333;
+    & > footer{
+      display: flex;
+      justify-content: space-between;
+      width: 870px;
+      margin: 0 auto;
+      height: 33px;
+      font-size: 10px;
+      font-weight: 400;
+      color: #999999;
+      & > article:last-child > section {
+        float: left;
+        margin-left: 30px;
+      }
+    }
+`;
+export function FooterTop() {
   function handleClick(e) {
     e.preventDefault();
   }
@@ -166,12 +166,10 @@ function FooterTop() {
     </FooterTopSty>
   )
 }
-export function Footer() { 
+export function FooterBottom() {
   return (
-    <FooterStyle>
-      <FooterTop />
-      <section className="f-bottom">
-          <footer>
+    <FooterBootmStyle>
+        <footer>
             <article>
               <section>© 2016 Avenue Fashion™</section>
             </article>
@@ -180,7 +178,14 @@ export function Footer() {
               <section>Dev by Loremipsum.com</section>
             </article>
           </footer>
-      </section>
+    </FooterBootmStyle>
+  )
+}
+export function Footer() { 
+  return (
+    <FooterStyle>
+      <FooterTop />
+      <FooterBottom />
     </FooterStyle>
   )
 }
