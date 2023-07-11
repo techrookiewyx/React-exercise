@@ -8,6 +8,7 @@ import { LookBook } from "./components/LookBook";
 import { ShopList } from "./components/ShopList";
 import { PageSix } from "./components/PageSix";
 import PageSeven from "./components/PageSeven";
+import PageEight from "./components/PageEight";
 export default function PageFive() {
   useEffect(() => { 
     const body = document.body;
@@ -28,6 +29,7 @@ export default function PageFive() {
       <LookBook />
       <PageSix/>
       <PageSeven />
+      <PageEight/>
       <Footer />
     </WholeWapper>
   )
