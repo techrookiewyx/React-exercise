@@ -21,7 +21,7 @@ import ButtonEvent from "./7-resp-event";
 // Log早版
 //import Log from './8-example-logs';
 //11 更新数据
-import MyButtonNine from './9-update-useState';
+import MyButtonNine from "./9-update-useState";
 //案例12
 import MyButtonTen from "./10-update-useState";
 // 13
@@ -35,7 +35,6 @@ import ProfileUse from "./14-user-assembly";
 //17 Logs
 import Logs from "./Logs/Logs";
 //import Card from './Logs/Card';
-
 
 // 18  improt和exprot
 import DefExprot from "./16-defalut-exprot";
@@ -233,7 +232,7 @@ import StateTree from "./112-state-tree-position";
 import StateDestroy from "./113-state-destroy";
 //114 state保留
 import StateReserve from "./114-state-reserve";
-//115 注意 
+//115 注意
 import StateTreeNotice from "./115-state-tree-notice";
 //116 state重置（位置相同的不同组件-切换）
 import StateResetSwitch from "./116-state-reset";
@@ -249,16 +248,16 @@ import StateResetUsekey from "./120-state-rest-useKey";
 import Messenger from "./121-reset-from-key";
 //122  修复丢失的输入框文本
 import RepairLostInput from "./122-repair-lost-input";
-//123  交换两个表单字段 
+//123  交换两个表单字段
 import ChangeFormField from "./123-change-form-field";
 //124  重置详情表单
 import ResetFormField from "./124-reset-form-field";
-//125  修复列表中错位的 state 
+//125  修复列表中错位的 state
 import RepaetListDislocation from "./125-repaet-list-state";
 //126  state 表单操作
 import FormOperate from "./126-form-operate";
 //127  reducer 表单操作
-import RedcuerFormOp from "./127-state-to-redcuer"; 
+import RedcuerFormOp from "./127-state-to-redcuer";
 //128  immerReducer简化更新逻辑
 import ImmerRedcuerFormOp from "./128-immer-reducer";
 //129  reducer使用案例-聊天表单
@@ -323,7 +322,7 @@ import TodoList from "./157-update-state";
 import TodoListImdUpdate from "./158-immediate-update-dom";
 //159  ref修改DOM
 import RefModifDom from "./159-ref-modify-dom";
-//160  ref操作dom案例-播放和暂停视频 
+//160  ref操作dom案例-播放和暂停视频
 import VideoPlayer from "./160-ref-play-pause-video";
 //161  ref操作dom案例-使搜索域获得焦点
 import RefGetFocus from "./161-ref-get-focus";
@@ -460,7 +459,7 @@ import RepTwiceTrigger from "./225-repeat-twice-trigger";
 //226  案例补充-修复在Effect中获取
 import RepEffGetDate from "./226-repeat-effet-getdata";
 //227  案例补充-修复损坏的故事集
-import RepeatStoryList  from "./227-repeat-storylist";
+import RepeatStoryList from "./227-repeat-storylist";
 //228  案例补充-修复事件处理函数
 import LightSwitch from "./228-add-case-event";
 //229  案例补充-children prop
@@ -481,249 +480,251 @@ import PageThree from "./page-three/PageThree";
 import PageFour from "./page-four/PageFour";
 //页面五
 import PageFive from "./page-five/PageFive";
+import PageNine from "./page-nine/PageNine";
 export default function App() {
   return (
-    <>   
+    <>
       <Routes>
-        <Route path="/" element={<UlList />}/>
-          <Route path="/case-1" element={<FirstProgram />} />
-          <Route path="/case-2" element={<Fn2 />} />
-          <Route path="/case-3" element={div2} />
-          <Route path="/case-4" element={div3} />
-          <Route path="/case-5" element={<Profile />} />
-          <Route path="/case-jsx4" element={jsx4} />
-          <Route path="/case-jsx5_1" element={jsx5_1} />
-          <Route path="/case-jsx5_2" element={jsx5_2} />
-          <Route path="/case-9" element={<FuritList/>} />
-          <Route path="/case-10" element={<ButtonEvent/>} />
-          <Route path="/case-11" element={<MyButtonNine/>} />
-          <Route path="/case-12" element={<MyButtonTen/>} />
-          <Route path="/case-13" element={<StateEleven/>} />
-          <Route path="/case-14" element={<DataShare/>} />
-          <Route path="/case-15" element={<ProfileF/>} />
-          <Route path="/case-16" element={<ProfileUse/>} />
-          <Route path="/case-17" element={<Logs/>} />
-          <Route path="/case-18" element={<DefExprot/>} />
-          <Route path="/case-19" element={<HtmlToJSX/>} />
-          <Route path="/case-20" element={<Bio/>} />
-          <Route path="/case-21" element={<Bracket/>} />
-          <Route path="/case-22" element={<JsxObj/>} />
-          <Route path="/case-23" element={<JsxMore/>} />
-          <Route path="/case-24" element={<Commun/>} />
-          <Route path="/case-25" element={<FatherProps/>} />
-          <Route path="/case-26" element={<PropsChall/>} />
-          <Route path="/case-27" element={<CreateClass/>} />
-          <Route path="/case-28" element={<Judge/>} />
-          <Route path="/case-29" element={<JudgeNull/>} />
-          <Route path="/case-30" element={<JudgeSanmu/>} />
-          <Route path="/case-31" element={<JudgeDel/>} />
-          <Route path="/case-32" element={<JudgeAnd/>} />
-          <Route path="/case-33" element={<JudgeBian/>} />
-          <Route path="/case-34" element={<JudgeBian2/>} />
-          <Route path="/case-35" element={<DrinkList/>} />
-          <Route path="/case-36" element={<ListMap/>} />
-          <Route path="/case-37" element={<ListFilter/>} />
-          <Route path="/case-38" element={<RecipeList/>} />
-          <Route path="/case-39" element={<RecipeList2/>} />
-          <Route path="/case-40" element={<ListSeparator/>} />
-          <Route path="/case-41" element={<PureFn/>} />
-          <Route path="/case-42" element={<TeaSet/>} />
-          <Route path="/case-43" element={<TeaGathering/>} />
-          <Route path="/case-44" element={<PureCase/>} />
-          <Route path="/case-45" element={<CkBtn/>} />
-          <Route path="/case-46" element={<EventGetProps/>} />
-          <Route path="/case-47" element={<EventTransProps/>} />
-          <Route path="/case-48" element={<EventNameProps/>} />
-          <Route path="/case-49" element={<EventMoreProps/>} />
-          <Route path="/case-50" element={<EventSpread/>} />
-          <Route path="/case-51" element={<EventStopSpread/>} />
-          <Route path="/case-52" element={<EventStopDef/>} />
-          <Route path="/case-53" element={<StateExp/>} />
-          <Route path="/case-54" element={<MoreState/>} />
-          <Route path="/case-55" element={<PrivateState/>} />
-          <Route path="/case-56" element={<RepairState/>} />
-          <Route path="/case-57" element={<FormState/>} />
-          <Route path="/case-58" element={<FeedbackForm/>} />
-          <Route path="/case-59" element={<FirtstRender/>} />
-          <Route path="/case-60" element={<StateRender/>} />
-          <Route path="/case-61" element={<StateFeature/>} />
-          <Route path="/case-62" element={<StateAtTime/>} />
-          <Route path="/case-63" element={<StateTimetwo/>} />
-          <Route path="/case-64" element={<Form/>} />
-          <Route path="/case-65" element={<TrafficLight/>} />
-          <Route path="/case-66" element={<UpdateState/>} />
-          <Route path="/case-67" element={<UpdateStateRep/>} />
-          <Route path="/case-68" element={<ReplaceStateUpd/>} />
-          <Route path="/case-69" element={<UpdateFunciton/>} />
-          <Route path="/case-70" element={<UpdateQueue/>} />
-          <Route path="/case-71" element={<MoveDot/>} />
-          <Route path="/case-72" element={<ChangeMoveDot/>} />
-          <Route path="/case-73" element={<SpreadStateObj/>} />
-          <Route path="/case-74" element={<SingalHandle/>} />
-          <Route path="/case-75" element={<NestObj/>} />
-          <Route path="/case-76" element={<ImmerUse/>} />
-          <Route path="/case-77" element={<Scoreboard/>} />
-          <Route path="/case-78" element={<Canvas/>} />
-          <Route path="/case-79" element={<ArrayAddFault/>} />
-          <Route path="/case-80" element={<ArrayAdd/>} />
-          <Route path="/case-81" element={<ArrayDel/>} />
-          <Route path="/case-82" element={<ArrayChange/>} />
-          <Route path="/case-83" element={<ArrayReplace/>} />
-          <Route path="/case-84" element={<ArrayInsert/>} />
-          <Route path="/case-85" element={<ArrayRev/>} />
-          <Route path="/case-86" element={<ArrayOjb/>} />
-          <Route path="/case-87" element={<ArrayOjbImmer/>} />
-          <Route path="/case-88" element={<ShoppingCart/>} />
-          <Route path="/case-89" element={<ShoppingCart2/>} />
-          <Route path="/case-90" element={<StateImitateEmp/>} />
-          <Route path="/case-91" element={<StateImitateSuc/>} />
-          <Route path="/case-92" element={<AllStatus/>} />
-          <Route path="/case-93" element={<StateRespInput/>} />
-          <Route path="/case-94" element={<ImitsateCase />} />
-          <Route path="/case-95" element={<StateMerge />} />
-          <Route path="/case-96" element={<Contradiction />} />
-          <Route path="/case-97" element={<AvoidContrd />} />
-          <Route path="/case-98" element={<Redundance />} />
-          <Route path="/case-99" element={<AvoidRedundance />} />
-          <Route path="/case-100" element={<RepeatState />} />
-          <Route path="/case-101" element={<AvoidRepeatState />} />
-          <Route path="/case-102" element={<DeepNestState />} />
-          <Route path="/case-103" element={<AvoidDeepState />} />
-          <Route path="/case-104" element={<TravelPlan />} />
-          <Route path="/case-105" element={<ImmerTravelPlan />} />
-          <Route path="/case-106" element={<MailClient />} />
-          <Route path="/case-107" element={<MailClientTwo />} />
-          <Route path="/case-108" element={<StateIndependence />} />
-          <Route path="/case-109" element={<StateImprove />} />
-          <Route path="/case-110" element={<InputStateSync />} />
-          <Route path="/case-111" element={<StateImproveListFilter />} />
-          <Route path="/case-112" element={<StateTree />} />
-          <Route path="/case-113" element={<StateDestroy />} />
-          <Route path="/case-114" element={<StateReserve />} />
-          <Route path="/case-115" element={<StateTreeNotice />} />
-          <Route path="/case-116" element={<StateResetSwitch />} />
-          <Route path="/case-117" element={<StateResetTwo />} />
-          <Route path="/case-118" element={<StateKeepNohope />} />
-          <Route path="/case-119" element={<StateResetDiffPos />} />
-          <Route path="/case-120" element={<StateResetUsekey />} />
-          <Route path="/case-121" element={<Messenger />} />
-          <Route path="/case-122" element={<RepairLostInput />} />
-          <Route path="/case-123" element={<ChangeFormField />} />
-          <Route path="/case-124" element={<ResetFormField />} />
-          <Route path="/case-125" element={<RepaetListDislocation />} />
-          <Route path="/case-126" element={<FormOperate />} />
-          <Route path="/case-127" element={<RedcuerFormOp />} />
-          <Route path="/case-128" element={<ImmerRedcuerFormOp />} />
-          <Route path="/case-129" element={<ReducerChat />} />
-          <Route path="/case-130" element={<ReducerChatResetInput />} />
-          <Route path="/case-131" element={<ReducerChatChangeKeep />} />
-          <Route path="/case-132" element={<ComeTureReducer />} />
-          <Route path="/case-133" element={<PropsLevel />} />
-          <Route path="/case-134" element={<PropsLevelTwo />} />
-          <Route path="/case-135" element={<ContextLevel />} />
-          <Route path="/case-136" element={<Page/>} />
-          <Route path="/case-137" element={<ProfilePage/>} />
-          <Route path="/case-138" element={<ContextChallange/>} />
-          <Route path="/case-139" element={<TaskApp/>} />
-          <Route path="/case-140" element={<TaskAppRedCon/>} />
-          <Route path="/case-141" element={<TaskAppRedConMove/>} />
-          <Route path="/case-142" element={<RefUse/>} />
-          <Route path="/case-143" element={<StateStopwatch/>} />
-          <Route path="/case-144" element={<RefStopwatch/>} />
-          <Route path="/case-145" element={<StateCount/>} />
-          <Route path="/case-146" element={<RefCount/>} />
-          <Route path="/case-147" element={<RefRepeatInput/>} />
-          <Route path="/case-148" element={<Toggle/>} />
-          <Route path="/case-149" element={<RefRepeatDebounce/>} />
-          <Route path="/case-150" element={<RefGetNewState/>} />
-          <Route path="/case-151" element={<RefGetDom/>} />
-          <Route path="/case-152" element={<RefOpaDomScroll/>} />
-          <Route path="/case-153" element={<RefCallBack/>} />
-          <Route path="/case-154" element={<GetOtherUnitDomErr/>} />
-          <Route path="/case-155" element={<GetOtherUnitDom/>} />
-          <Route path="/case-156" element={<RefHandleExpose/>} />
-          <Route path="/case-157" element={<TodoList/>} />
-          <Route path="/case-158" element={<TodoListImdUpdate/>} />
-          <Route path="/case-159" element={<RefModifDom/>} />
-          <Route path="/case-160" element={<VideoPlayer/>} />
-          <Route path="/case-161" element={<RefGetFocus/>} />
-          <Route path="/case-162" element={<CatFriends/>} />
-          <Route path="/case-163" element={<PageFocus/>} />
-          <Route path="/case-164" element={<EventOutsideEffect/>} />
-          <Route path="/case-165" element={<UseEffectVideo/>} />
-          <Route path="/case-166" element={<EffectRun/>} />
-          <Route path="/case-167" element={<EffectDependency/>} />
-          <Route path="/case-168" element={<ChateRoom/>} />
-          <Route path="/case-169" element={<ChateRoomClear/>} />
-          <Route path="/case-170" element={<EfffectTime/>} />
-          <Route path="/case-171" element={<EffectFocus/>} />
-          <Route path="/case-172" element={<Counter/>} />
-          <Route path="/case-173" element={<NoEffectTodoList/>} />
-          <Route path="/case-174" element={<UseMemoTodoList/>} />
-          <Route path="/case-175" element={<NoEffectReState/>} />
-          <Route path="/case-176" element={<NoEffectForm/>} />
-          <Route path="/case-177" element={<EffectResync/>} />
-          <Route path="/case-178" element={<EffectReactiveVle/>} />
-          <Route path="/case-179" element={<EffecEmptyDeps/>} />
-          <Route path="/case-180" element={<LinterCheckDeps/>} />
-          <Route path="/case-181" element={<RepeateIptResync/>} />
-          <Route path="/case-182" element={<EffectChangeSync/>} />
-          <Route path="/case-183" element={<RepeatEmpetDeps/>} />
-          <Route path="/case-184" element={<RepeatSwitchRoom/>} />
-          <Route path="/case-185" element={<EffectAlone/>} />
-          <Route path="/case-186" element={<EvenetAndEffect/>} />
-          <Route path="/case-187" element={<EffectOverLogic/>} />
-          <Route path="/case-188" element={<EffectGetNotLogic/>} />
-          <Route path="/case-189" element={<CubLinterOldV/>} />
-          <Route path="/case-190" element={<UpdateTimer/>} />
-          <Route path="/case-191" element={<RepeatFreezeTimer/>} />
-          <Route path="/case-192" element={<RepeatDelay/>} />
-          <Route path="/case-193" element={<RepeatDelayInfo/>} />
-          <Route path="/case-194" element={<DepsWithCode/>} />
-          <Route path="/case-195" element={<RemoveDeps/>} />
-          <Route path="/case-196" element={<IgnoreLinterFault/>} />
-          <Route path="/case-197" element={<ObjAsReactionValue/>} />
-          <Route path="/case-198" element={<MoveOjbToEffect/>} />
-          <Route path="/case-199" element={<RepeatResetGap/>} />
-          <Route path="/case-200" element={<RepeatAnimation/>} />
-          <Route path="/case-201" element={<RepeatRelink/>} />
-          <Route path="/case-202" element={<StatusBar/>} />
-          <Route path="/case-203" element={<SaveButton/>} />
-          <Route path="/case-204" element={<HookOnline/>} />
-          <Route path="/case-205" element={<IndependentStateForm/>} />
-          <Route path="/case-206" element={<HoookForm/>} />
-          <Route path="/case-207" element={<HookChatRoom/>} />
-          <Route path="/case-208" element={<HookOnlineRe/>} />
-          <Route path="/case-209" element={<HookFadeIn/>} />
-          <Route path="/case-210" element={<HookCount/>} />
-          <Route path="/case-211" element={<HookCountDelay/>} />
-          <Route path="/case-211-2" element={<DrawInterval/>} />  
-          <Route path="/case-212" element={<HookDelayValue />} />
-          <Route path="/case-213" element={<StaticVer/>} />
-          <Route path="/case-214" element={<CreateState/>} />
-          <Route path="/case-215" element={<AddDateFlow/>} />
-          <Route path="/case-216" element={<OrderOutStore/>} />
-          <Route path="/case-217" element={<OrderBapi/>} />
-          <Route path="/case-218" element={<TicGame/>} />
-          <Route path="/case-219" element={<ColorSwitch/>} />
-          <Route path="/case-220" element={<AddRemCssClass/>} />
-          <Route path="/case-221" element={<RepeatNotUpdate/>} />
-          <Route path="/case-222" element={<ClearLoadingPic/>} />
-          <Route path="/case-223" element={<RepBrokenClock/>} />
-          <Route path="/case-224" element={<RepeatDataCard/>} />
-          <Route path="/case-225" element={<RepTwiceTrigger/>} />
-          <Route path="/case-226" element={<RepEffGetDate/>} />
-          <Route path="/case-227" element={<RepeatStoryList/>} />
-          <Route path="/case-228" element={<LightSwitch/>} />
-          <Route path="/case-229" element={<ChildrenTransCode/>} />
-          <Route path="/case-230" element={<SecretChat/>} />
-          <Route path="/case-231" element={<JumpRecal/>} />
-          <Route path="/case-232" element={<RepJiange/>} />
-          <Route path="/page-one" element={<PageOne/>} />
-          <Route path="/page-two" element={<PageTwo/>} />
-          <Route path="/page-three" element={<PageThree/>} />
-          <Route path="/page-four" element={<PageFour/>} />
-          <Route path="/page-five" element={<PageFive/>} />
+        <Route path="/" element={<UlList />} />
+        <Route path="/case-1" element={<FirstProgram />} />
+        <Route path="/case-2" element={<Fn2 />} />
+        <Route path="/case-3" element={div2} />
+        <Route path="/case-4" element={div3} />
+        <Route path="/case-5" element={<Profile />} />
+        <Route path="/case-jsx4" element={jsx4} />
+        <Route path="/case-jsx5_1" element={jsx5_1} />
+        <Route path="/case-jsx5_2" element={jsx5_2} />
+        <Route path="/case-9" element={<FuritList />} />
+        <Route path="/case-10" element={<ButtonEvent />} />
+        <Route path="/case-11" element={<MyButtonNine />} />
+        <Route path="/case-12" element={<MyButtonTen />} />
+        <Route path="/case-13" element={<StateEleven />} />
+        <Route path="/case-14" element={<DataShare />} />
+        <Route path="/case-15" element={<ProfileF />} />
+        <Route path="/case-16" element={<ProfileUse />} />
+        <Route path="/case-17" element={<Logs />} />
+        <Route path="/case-18" element={<DefExprot />} />
+        <Route path="/case-19" element={<HtmlToJSX />} />
+        <Route path="/case-20" element={<Bio />} />
+        <Route path="/case-21" element={<Bracket />} />
+        <Route path="/case-22" element={<JsxObj />} />
+        <Route path="/case-23" element={<JsxMore />} />
+        <Route path="/case-24" element={<Commun />} />
+        <Route path="/case-25" element={<FatherProps />} />
+        <Route path="/case-26" element={<PropsChall />} />
+        <Route path="/case-27" element={<CreateClass />} />
+        <Route path="/case-28" element={<Judge />} />
+        <Route path="/case-29" element={<JudgeNull />} />
+        <Route path="/case-30" element={<JudgeSanmu />} />
+        <Route path="/case-31" element={<JudgeDel />} />
+        <Route path="/case-32" element={<JudgeAnd />} />
+        <Route path="/case-33" element={<JudgeBian />} />
+        <Route path="/case-34" element={<JudgeBian2 />} />
+        <Route path="/case-35" element={<DrinkList />} />
+        <Route path="/case-36" element={<ListMap />} />
+        <Route path="/case-37" element={<ListFilter />} />
+        <Route path="/case-38" element={<RecipeList />} />
+        <Route path="/case-39" element={<RecipeList2 />} />
+        <Route path="/case-40" element={<ListSeparator />} />
+        <Route path="/case-41" element={<PureFn />} />
+        <Route path="/case-42" element={<TeaSet />} />
+        <Route path="/case-43" element={<TeaGathering />} />
+        <Route path="/case-44" element={<PureCase />} />
+        <Route path="/case-45" element={<CkBtn />} />
+        <Route path="/case-46" element={<EventGetProps />} />
+        <Route path="/case-47" element={<EventTransProps />} />
+        <Route path="/case-48" element={<EventNameProps />} />
+        <Route path="/case-49" element={<EventMoreProps />} />
+        <Route path="/case-50" element={<EventSpread />} />
+        <Route path="/case-51" element={<EventStopSpread />} />
+        <Route path="/case-52" element={<EventStopDef />} />
+        <Route path="/case-53" element={<StateExp />} />
+        <Route path="/case-54" element={<MoreState />} />
+        <Route path="/case-55" element={<PrivateState />} />
+        <Route path="/case-56" element={<RepairState />} />
+        <Route path="/case-57" element={<FormState />} />
+        <Route path="/case-58" element={<FeedbackForm />} />
+        <Route path="/case-59" element={<FirtstRender />} />
+        <Route path="/case-60" element={<StateRender />} />
+        <Route path="/case-61" element={<StateFeature />} />
+        <Route path="/case-62" element={<StateAtTime />} />
+        <Route path="/case-63" element={<StateTimetwo />} />
+        <Route path="/case-64" element={<Form />} />
+        <Route path="/case-65" element={<TrafficLight />} />
+        <Route path="/case-66" element={<UpdateState />} />
+        <Route path="/case-67" element={<UpdateStateRep />} />
+        <Route path="/case-68" element={<ReplaceStateUpd />} />
+        <Route path="/case-69" element={<UpdateFunciton />} />
+        <Route path="/case-70" element={<UpdateQueue />} />
+        <Route path="/case-71" element={<MoveDot />} />
+        <Route path="/case-72" element={<ChangeMoveDot />} />
+        <Route path="/case-73" element={<SpreadStateObj />} />
+        <Route path="/case-74" element={<SingalHandle />} />
+        <Route path="/case-75" element={<NestObj />} />
+        <Route path="/case-76" element={<ImmerUse />} />
+        <Route path="/case-77" element={<Scoreboard />} />
+        <Route path="/case-78" element={<Canvas />} />
+        <Route path="/case-79" element={<ArrayAddFault />} />
+        <Route path="/case-80" element={<ArrayAdd />} />
+        <Route path="/case-81" element={<ArrayDel />} />
+        <Route path="/case-82" element={<ArrayChange />} />
+        <Route path="/case-83" element={<ArrayReplace />} />
+        <Route path="/case-84" element={<ArrayInsert />} />
+        <Route path="/case-85" element={<ArrayRev />} />
+        <Route path="/case-86" element={<ArrayOjb />} />
+        <Route path="/case-87" element={<ArrayOjbImmer />} />
+        <Route path="/case-88" element={<ShoppingCart />} />
+        <Route path="/case-89" element={<ShoppingCart2 />} />
+        <Route path="/case-90" element={<StateImitateEmp />} />
+        <Route path="/case-91" element={<StateImitateSuc />} />
+        <Route path="/case-92" element={<AllStatus />} />
+        <Route path="/case-93" element={<StateRespInput />} />
+        <Route path="/case-94" element={<ImitsateCase />} />
+        <Route path="/case-95" element={<StateMerge />} />
+        <Route path="/case-96" element={<Contradiction />} />
+        <Route path="/case-97" element={<AvoidContrd />} />
+        <Route path="/case-98" element={<Redundance />} />
+        <Route path="/case-99" element={<AvoidRedundance />} />
+        <Route path="/case-100" element={<RepeatState />} />
+        <Route path="/case-101" element={<AvoidRepeatState />} />
+        <Route path="/case-102" element={<DeepNestState />} />
+        <Route path="/case-103" element={<AvoidDeepState />} />
+        <Route path="/case-104" element={<TravelPlan />} />
+        <Route path="/case-105" element={<ImmerTravelPlan />} />
+        <Route path="/case-106" element={<MailClient />} />
+        <Route path="/case-107" element={<MailClientTwo />} />
+        <Route path="/case-108" element={<StateIndependence />} />
+        <Route path="/case-109" element={<StateImprove />} />
+        <Route path="/case-110" element={<InputStateSync />} />
+        <Route path="/case-111" element={<StateImproveListFilter />} />
+        <Route path="/case-112" element={<StateTree />} />
+        <Route path="/case-113" element={<StateDestroy />} />
+        <Route path="/case-114" element={<StateReserve />} />
+        <Route path="/case-115" element={<StateTreeNotice />} />
+        <Route path="/case-116" element={<StateResetSwitch />} />
+        <Route path="/case-117" element={<StateResetTwo />} />
+        <Route path="/case-118" element={<StateKeepNohope />} />
+        <Route path="/case-119" element={<StateResetDiffPos />} />
+        <Route path="/case-120" element={<StateResetUsekey />} />
+        <Route path="/case-121" element={<Messenger />} />
+        <Route path="/case-122" element={<RepairLostInput />} />
+        <Route path="/case-123" element={<ChangeFormField />} />
+        <Route path="/case-124" element={<ResetFormField />} />
+        <Route path="/case-125" element={<RepaetListDislocation />} />
+        <Route path="/case-126" element={<FormOperate />} />
+        <Route path="/case-127" element={<RedcuerFormOp />} />
+        <Route path="/case-128" element={<ImmerRedcuerFormOp />} />
+        <Route path="/case-129" element={<ReducerChat />} />
+        <Route path="/case-130" element={<ReducerChatResetInput />} />
+        <Route path="/case-131" element={<ReducerChatChangeKeep />} />
+        <Route path="/case-132" element={<ComeTureReducer />} />
+        <Route path="/case-133" element={<PropsLevel />} />
+        <Route path="/case-134" element={<PropsLevelTwo />} />
+        <Route path="/case-135" element={<ContextLevel />} />
+        <Route path="/case-136" element={<Page />} />
+        <Route path="/case-137" element={<ProfilePage />} />
+        <Route path="/case-138" element={<ContextChallange />} />
+        <Route path="/case-139" element={<TaskApp />} />
+        <Route path="/case-140" element={<TaskAppRedCon />} />
+        <Route path="/case-141" element={<TaskAppRedConMove />} />
+        <Route path="/case-142" element={<RefUse />} />
+        <Route path="/case-143" element={<StateStopwatch />} />
+        <Route path="/case-144" element={<RefStopwatch />} />
+        <Route path="/case-145" element={<StateCount />} />
+        <Route path="/case-146" element={<RefCount />} />
+        <Route path="/case-147" element={<RefRepeatInput />} />
+        <Route path="/case-148" element={<Toggle />} />
+        <Route path="/case-149" element={<RefRepeatDebounce />} />
+        <Route path="/case-150" element={<RefGetNewState />} />
+        <Route path="/case-151" element={<RefGetDom />} />
+        <Route path="/case-152" element={<RefOpaDomScroll />} />
+        <Route path="/case-153" element={<RefCallBack />} />
+        <Route path="/case-154" element={<GetOtherUnitDomErr />} />
+        <Route path="/case-155" element={<GetOtherUnitDom />} />
+        <Route path="/case-156" element={<RefHandleExpose />} />
+        <Route path="/case-157" element={<TodoList />} />
+        <Route path="/case-158" element={<TodoListImdUpdate />} />
+        <Route path="/case-159" element={<RefModifDom />} />
+        <Route path="/case-160" element={<VideoPlayer />} />
+        <Route path="/case-161" element={<RefGetFocus />} />
+        <Route path="/case-162" element={<CatFriends />} />
+        <Route path="/case-163" element={<PageFocus />} />
+        <Route path="/case-164" element={<EventOutsideEffect />} />
+        <Route path="/case-165" element={<UseEffectVideo />} />
+        <Route path="/case-166" element={<EffectRun />} />
+        <Route path="/case-167" element={<EffectDependency />} />
+        <Route path="/case-168" element={<ChateRoom />} />
+        <Route path="/case-169" element={<ChateRoomClear />} />
+        <Route path="/case-170" element={<EfffectTime />} />
+        <Route path="/case-171" element={<EffectFocus />} />
+        <Route path="/case-172" element={<Counter />} />
+        <Route path="/case-173" element={<NoEffectTodoList />} />
+        <Route path="/case-174" element={<UseMemoTodoList />} />
+        <Route path="/case-175" element={<NoEffectReState />} />
+        <Route path="/case-176" element={<NoEffectForm />} />
+        <Route path="/case-177" element={<EffectResync />} />
+        <Route path="/case-178" element={<EffectReactiveVle />} />
+        <Route path="/case-179" element={<EffecEmptyDeps />} />
+        <Route path="/case-180" element={<LinterCheckDeps />} />
+        <Route path="/case-181" element={<RepeateIptResync />} />
+        <Route path="/case-182" element={<EffectChangeSync />} />
+        <Route path="/case-183" element={<RepeatEmpetDeps />} />
+        <Route path="/case-184" element={<RepeatSwitchRoom />} />
+        <Route path="/case-185" element={<EffectAlone />} />
+        <Route path="/case-186" element={<EvenetAndEffect />} />
+        <Route path="/case-187" element={<EffectOverLogic />} />
+        <Route path="/case-188" element={<EffectGetNotLogic />} />
+        <Route path="/case-189" element={<CubLinterOldV />} />
+        <Route path="/case-190" element={<UpdateTimer />} />
+        <Route path="/case-191" element={<RepeatFreezeTimer />} />
+        <Route path="/case-192" element={<RepeatDelay />} />
+        <Route path="/case-193" element={<RepeatDelayInfo />} />
+        <Route path="/case-194" element={<DepsWithCode />} />
+        <Route path="/case-195" element={<RemoveDeps />} />
+        <Route path="/case-196" element={<IgnoreLinterFault />} />
+        <Route path="/case-197" element={<ObjAsReactionValue />} />
+        <Route path="/case-198" element={<MoveOjbToEffect />} />
+        <Route path="/case-199" element={<RepeatResetGap />} />
+        <Route path="/case-200" element={<RepeatAnimation />} />
+        <Route path="/case-201" element={<RepeatRelink />} />
+        <Route path="/case-202" element={<StatusBar />} />
+        <Route path="/case-203" element={<SaveButton />} />
+        <Route path="/case-204" element={<HookOnline />} />
+        <Route path="/case-205" element={<IndependentStateForm />} />
+        <Route path="/case-206" element={<HoookForm />} />
+        <Route path="/case-207" element={<HookChatRoom />} />
+        <Route path="/case-208" element={<HookOnlineRe />} />
+        <Route path="/case-209" element={<HookFadeIn />} />
+        <Route path="/case-210" element={<HookCount />} />
+        <Route path="/case-211" element={<HookCountDelay />} />
+        <Route path="/case-211-2" element={<DrawInterval />} />
+        <Route path="/case-212" element={<HookDelayValue />} />
+        <Route path="/case-213" element={<StaticVer />} />
+        <Route path="/case-214" element={<CreateState />} />
+        <Route path="/case-215" element={<AddDateFlow />} />
+        <Route path="/case-216" element={<OrderOutStore />} />
+        <Route path="/case-217" element={<OrderBapi />} />
+        <Route path="/case-218" element={<TicGame />} />
+        <Route path="/case-219" element={<ColorSwitch />} />
+        <Route path="/case-220" element={<AddRemCssClass />} />
+        <Route path="/case-221" element={<RepeatNotUpdate />} />
+        <Route path="/case-222" element={<ClearLoadingPic />} />
+        <Route path="/case-223" element={<RepBrokenClock />} />
+        <Route path="/case-224" element={<RepeatDataCard />} />
+        <Route path="/case-225" element={<RepTwiceTrigger />} />
+        <Route path="/case-226" element={<RepEffGetDate />} />
+        <Route path="/case-227" element={<RepeatStoryList />} />
+        <Route path="/case-228" element={<LightSwitch />} />
+        <Route path="/case-229" element={<ChildrenTransCode />} />
+        <Route path="/case-230" element={<SecretChat />} />
+        <Route path="/case-231" element={<JumpRecal />} />
+        <Route path="/case-232" element={<RepJiange />} />
+        <Route path="/page-one" element={<PageOne />} />
+        <Route path="/page-two" element={<PageTwo />} />
+        <Route path="/page-three" element={<PageThree />} />
+        <Route path="/page-four" element={<PageFour />} />
+        <Route path="/page-five" element={<PageFive />} />
+        <Route path="/page-nine" element={<PageNine />} />
         {/*</Route>*/}
       </Routes>
     </>
