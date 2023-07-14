@@ -481,6 +481,7 @@ import PageFour from "./page-four/PageFour";
 //页面五
 import PageFive from "./page-five/PageFive";
 import PageNine from "./page-nine/PageNine";
+import PageTen from "./page-ten/PageTen";
 export default function App() {
   return (
     <>
@@ -725,6 +726,7 @@ export default function App() {
         <Route path="/page-four" element={<PageFour />} />
         <Route path="/page-five" element={<PageFive />} />
         <Route path="/page-nine" element={<PageNine />} />
+        <Route path="/page-ten" element={<PageTen/>} />
         {/*</Route>*/}
       </Routes>
     </>
