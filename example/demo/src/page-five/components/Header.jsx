@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 const HeaderStyle = styled.header`
@@ -86,7 +87,7 @@ export function Header() {
         <section className="head-nav-right clearfix">
           <ul>
             <li><a href="/#">Register</a></li>
-            <li><a href="../tenth-page/index.html">Sign In</a></li>
+            <li><Link to='ten'>Sign In</Link></li>
           </ul>
           <section className="head-nav-shop">
             <a href="/#">
