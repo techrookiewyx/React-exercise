@@ -478,8 +478,12 @@ import PageTwo from "./page-two/PageTwo";
 import PageThree from "./page-three/PageThree";
 //页面四
 import PageFour from "./page-four/PageFour";
-//页面五
-import PageFive from "./page-five/PageFive";
+//页面5-10 综合
+import DefaultPage from "./page-five/DefaultPage";
+import { PageSix } from "./page-five/components/PageSix";
+import PageFiveDe from "./page-five/components/PageFive";
+import PageSeven from "./page-five/components/PageSeven";
+import PageEight from "./page-five/components/PageEight";
 import PageNine from "./page-nine/PageNine";
 import PageTen from "./page-ten/PageTen";
 export default function App() {
@@ -724,9 +728,14 @@ export default function App() {
         <Route path="/page-two" element={<PageTwo />} />
         <Route path="/page-three" element={<PageThree />} />
         <Route path="/page-four" element={<PageFour />} />
-        <Route path="/page-five" element={<PageFive />} />
-        <Route path="/page-nine" element={<PageNine />} />
-        <Route path="/page-ten" element={<PageTen/>} />
+        <Route path="/page-five" element={<DefaultPage/>}>
+          <Route index element={ <PageFiveDe/>} />
+          <Route path="six" element={<PageSix/>} />
+          <Route path="seven" element={<PageSeven/>} />
+          <Route path="eight" element={<PageEight/>} />
+          <Route path="nine" element={<PageNine/>} />
+          <Route path="ten" element={<PageTen/>} />
+        </Route>
         {/*</Route>*/}
       </Routes>
     </>
