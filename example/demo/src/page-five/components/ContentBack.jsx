@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import bg from "../images/AVE.jpg";
 import { WebNavStyle } from "../style";
+import { Link } from "react-router-dom";
 
 // import { useState } from "react";
 // const data = [
@@ -60,12 +61,12 @@ export function WebNav() {
     <section className="np2-right clearfix">
       <ul>
         <li className="active">
-          <a onClick={handleClick} href="/#">MENS</a>
+          <Link to='page-five'>MENS</Link>
           <section className="sub-nav">
               <ul>
                   <h3>CASUALS</h3>
                   <li><a onClick={handleClick} href="/#">Jackets</a></li>
-                  <li><a href="../ninth-page/index.html">Hoodies & Sweatshirts</a></li>
+                  <li><Link to='nine'>Hoodies & Sweatshirts</Link></li>
                   <li><a onClick={handleClick} href="/#">Polo Shirts</a></li>
                   <li><a onClick={handleClick} href="/#">Sportswear</a></li>
                   <li><a onClick={handleClick} href="/#">Trousers & Chinos</a></li>
@@ -82,10 +83,10 @@ export function WebNav() {
           </section>
         </li>
         <li><a onClick={handleClick} href="/#">WOMENS</a></li>
-        <li><a href="/six-page">THE BRAND</a></li>
-        <li><a href="../seventh/index.html">LOACAL STORES</a></li>
+        <li><Link to='six'>THE BRAND</Link></li>
+        <li><Link to='seven'>LOACAL STORES</Link></li>
         <li>
-            <a href="../eighth-page/index.html">LOOK BOOK</a>
+            <Link to='eight'>LOOK BOOK</Link>
             <section className="sub-nav">
                     <ul>
                       <h3>OUR LOOKBOOK</h3>
@@ -132,51 +133,3 @@ export function ContentBack() {
     </ContBackStyle>
   );
 }
-
-
-
-
-// import { WebNavStyleSix } from "./ContentBack";
-// export function PageSixWebNav() {
-//   return (
-//     <WebNavStyleSix>
-      //  <h1>
-      //   <a onClick={handleClick} href="/#"><em>AVENUE</em> FASHION</a>
-      // </h1>
-      // <section className="np2-right clearfix">
-      //   <ul>
-      //     <li className="active">
-      //       <a onClick={handleClick} href="/#">MENS</a>
-      //       <section className="sub-nav">
-      //           <ul>
-      //               <h3>CASUALS</h3>
-      //               <li><a onClick={handleClick} href="/#">Jackets</a></li>
-      //               <li><a href="../ninth-page/index.html">Hoodies & Sweatshirts</a></li>
-      //               <li><a onClick={handleClick} href="/#">Polo Shirts</a></li>
-      //               <li><a onClick={handleClick} href="/#">Sportswear</a></li>
-      //               <li><a onClick={handleClick} href="/#">Trousers & Chinos</a></li>
-      //               <li><a onClick={handleClick} href="/#">T-Shirts</a></li>
-      //           </ul>
-      //           <ul>
-      //               <h3>FORMAL</h3>
-      //               <li><a onClick={handleClick} href="/#">Jackets</a></li>
-      //               <li><a onClick={handleClick} href="/#">Shirts</a></li>
-      //               <li><a onClick={handleClick} href="/#">Suits</a></li>
-      //               <li><a onClick={handleClick} href="/#">Trousers</a></li>
-      //           </ul>
-      //           <section>AUTUMN SALE! UP TO 50% OFF</section>
-      //       </section>
-      //     </li>
-      //     <li><a onClick={handleClick} href="/#">WOMENS</a></li>
-      //     <li><a href="../sixth-page/index.html">THE BRAND</a></li>
-      //     <li><a href="../seventh/index.html">LOACAL STORES</a></li>
-      //     <li><a href="../eighth-page/index.html">LOOK BOOK</a></li>
-      //   </ul>
-      //   <section className="search">
-      //     <input type="text" placeholder="Search.." />
-      //     <a onClick={handleClick} href="/#"><img src={require("../images/search.png")} width="10px" alt="" /></a>
-      //   </section>
-      // </section>
-//     </WebNavStyleSix>
-//   )
-// }

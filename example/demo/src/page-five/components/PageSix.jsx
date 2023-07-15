@@ -1,6 +1,7 @@
 import { WebNavStyle } from "../style";
 import { styled } from "styled-components";
 import back from '../images/intro.jpg'
+import { Link } from "react-router-dom";
 const SixTopNavWapper = styled.div`
   background-color: #f8f8f8;
 `;
@@ -166,12 +167,12 @@ export function PageSixTopNav({page}) {
       <section className="np2-right clearfix">
         <ul>
           <li className={page==='nine' ? 'active' : ''}>
-            <a onClick={handleClick} href="/#">MENS</a>
+            <Link to='/page-five'>MENS</Link>
             <section className="sub-nav">
                 <ul>
                     <h3>CASUALS</h3>
                     <li><a onClick={handleClick} href="/#">Jackets</a></li>
-                    <li className={page === 'nine' ? 'seeight' : ''}><a href="../ninth-page/index.html">Hoodies & Sweatshirts</a></li>
+                    <li className={page === 'nine' ? 'seeight' : ''}><Link to='/page-five/nine'>Hoodies & Sweatshirts</Link></li>
                     <li><a onClick={handleClick} href="/#">Polo Shirts</a></li>
                     <li><a onClick={handleClick} href="/#">Sportswear</a></li>
                     <li><a onClick={handleClick} href="/#">Trousers & Chinos</a></li>
@@ -188,10 +189,10 @@ export function PageSixTopNav({page}) {
             </section>
           </li>
           <li ><a onClick={handleClick} href="/#">WOMENS</a></li>
-          <li className={page==='six' ? 'active' : ''}><a href="../sixth-page/index.html">THE BRAND</a></li>
-          <li className={page==='seven' ? 'active' : ''}><a href="../seventh/index.html">LOACAL STORES</a></li>
+          <li className={page==='six' ? 'active' : ''}><Link to='/page-five/six'>THE BRAND</Link></li>
+          <li className={page==='seven' ? 'active' : ''}><Link to='/page-five/seven'>LOACAL STORES</Link></li>
           <li className={page === 'eight' ? 'active' : ''}>
-            <a href="../eighth-page/index.html">LOOK BOOK</a>
+            <Link to='/page-five/eight'>LOOK BOOK</Link>
             <section className="sub-nav">
                     <ul>
                       <h3>OUR LOOKBOOK</h3>
