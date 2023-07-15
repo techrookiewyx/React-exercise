@@ -2,10 +2,6 @@ import { styled } from "styled-components";
 import { BgShare, PageSixTopNav } from "../page-five/components/PageSix";
 import styles from "./styles.module.css";
 import '../page-five/css/fonts.css'
-import { WholeWapper } from "../page-five/style";
-import { Header } from "../page-five/components/Header";
-import { Footer } from "../page-five/components/Footer";
-import { useEffect } from "react";
 const ShopDet = styled.div`
   width: 870px;
   margin: 0 auto;
@@ -514,27 +510,14 @@ function Desb() {
   );
 }
 export default function PageNine() {
-  useEffect(() => { 
-    const body = document.body;
-    body.style.backgroundColor = '#fff';
-    body.style.width = '100%';
-    body.style.fontFamily='MR';
-    return ()=>{
-      body.style.backgroundColor = '';
-      body.style.width = '';
-      body.style.fontFamily='';
-    }
-  },[])
   return (
-    <WholeWapper>
-      <Header />
+    <>
       <PageSixTopNav page="nine" />
       <BgShare span1="PRODUCT" h2="VIEW" p="MENS - CASUALS - HOODIES & SWEATSHIRTS -" pspan="AVE CLASSIC SWEATSHIRT" />
       <ShopDet>
         <Detail />
         <Desb />
       </ShopDet>
-      <Footer />
-    </WholeWapper>
+    </>
   );
 }
